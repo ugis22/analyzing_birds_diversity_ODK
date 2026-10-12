@@ -1,0 +1,54 @@
+id,level,severity,name,description
+D01,project,error,stratum_not_sampled,A design stratum has no registered plot
+D02,project,warning,primary_plot_not_registered,Primary (planned) plot has not been registered
+P01,plot,info,plot_not_viable,Plot registered as not viable
+P02,plot,error,not_viable_without_reason,Plot marked not viable without a reason
+P03,plot,error,multiple_registrations,"Centroid registered more than once, or several vegplot entities"
+P04,plot,error,midpoint_too_far_from_centroid,Registered midpoint more than 25 m from the prescribed centroid
+P05,plot,warning,transect_length_off,"Length from A to B differs from 50 m, or a half from 25 m, by more than the tolerance"
+P06,plot,warning,transect_not_north_south,Transect bearing is further from the north/south axis than the tolerance
+P07,plot,warning,transect_not_straight,Midpoint is off the line from A to B by more than the tolerance
+P08,plot,warning,registration_gps_accuracy,Endpoint or midpoint GPS accuracy worse than 5 m
+P09,plot,warning,viable_plot_without_accepted_survey,Viable registered plot has no accepted herbaceous survey
+S01,survey,error,submission_rejected,Submission was rejected in ODK Central review
+S02,survey,warning,duplicate_survey_for_plot,More than one survey of the same plot in the same replicate
+S03,survey,error,quadrat_count_not_expected,Survey does not have exactly 20 quadrats
+S04,survey,error,quadrat_numbers_not_sequential,Quadrat numbers are not exactly 1 to 20
+S05,survey,error,end_before_start,End time is not after start time
+S06,survey,warning,duration_out_of_range,Survey duration outside the expected range
+S07,survey,warning,submitted_before_end,Server received the submission before the end time on the device
+S08,survey,error,plot_not_registered_or_not_viable,Survey on a plot that is not registered or not viable
+S09,survey,error,survey_before_registration,Survey started before the plot was registered
+S10,survey,info,backup_plot_surveyed,Survey is on a backup plot
+S11,survey,warning,recorder_not_in_team,Recorder is not one of the selected team members
+S12,survey,warning,inactive_team_or_transport,Selected team member or transport is inactive in the entity list
+S13,survey,warning,quadrats_with_species_mismatch,Form summary of quadrats with species differs from the records
+S14,survey,warning,few_quadrats_with_species,Share of quadrats with species below the minimum
+S15,survey,warning,background_point_far_or_missing,Background geopoint missing or far from the plot
+S16,survey,error,attachments_missing,Fewer attachments received than expected
+S17,survey,error,submission_not_confirmed,Submission not confirmed by the recorder
+S18,survey,warning,survey_off_registered_transect,Quadrats lie away from the registered transect line
+S19,survey,info,quadrat_walk_order_differs_from_sop,Quadrat order shows an out and back walk instead of both sides at each 5 m mark
+Q01,quadrat,error,quadrat_photo_missing,Quadrat photo missing
+Q02,quadrat,error,quadrat_gps_missing,Quadrat geopoint missing
+Q03,quadrat,warning,quadrat_gps_accuracy,Quadrat GPS accuracy worse than 5 m
+Q04,quadrat,warning,quadrat_outside_belt,Quadrat further from the line than half the belt width plus the GPS margin
+Q05,quadrat,warning,quadrat_beyond_transect_ends,Quadrat lies before A or after B by more than the GPS margin
+Q06,quadrat,warning,quadrat_position_jump,Quadrat far from both neighbouring quadrats (single position error)
+Q07,quadrat,warning,duplicate_quadrat_coordinates,Two quadrats of a survey have identical coordinates
+Q08,quadrat,error,herbs_present_but_no_species,herbs_present is yes but no species recorded
+Q09,quadrat,error,herbs_absent_but_species,herbs_present is no but species recorded
+Q10,quadrat,error,additional_flag_without_rows,additional_species_present is yes but there are no additional species rows
+Q11,quadrat,warning,species_count_mismatch,count_herb_species differs from the number of selected species
+Q12,quadrat,info,quadrat_comment,Field comment recorded for the quadrat
+R01,record,error,species_uuid_unknown,Selected species id not found in the species list
+R02,record,warning,species_not_herbaceous,Selected species is not in the herbaceous group
+R03,record,error,empty_additional_species_row,Additional species row without any species
+R04,record,warning,duplicate_species_in_quadrat,Same taxon recorded more than once in a quadrat
+R05,record,warning,name_not_canonical,"Typed name is not a canonical 'Genus epithet' (spaces, case, characters)"
+R06,record,warning,missing_species_already_in_list,Species entered as missing already exists in the species list
+R07,record,warning,name_possible_misspelling,"Typed name is close to, but not equal to, a listed name"
+R08,record,warning,same_taxon_multiple_placeholders,Same missing species name created under more than one placeholder id
+R09,record,info,unknown_pending_identification,Unknown morphospecies not yet identified in species_extra_ids
+R10,record,warning,resolution_note_exclude_or_duplicate,Identification after the survey says the record is a duplicate or should be excluded
+R11,record,warning,new_unknown_without_macro_photo,New unknown species created without a macro photo

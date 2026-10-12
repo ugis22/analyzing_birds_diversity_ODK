@@ -1,0 +1,6 @@
+item,count,expected,completeness
+quadrats recorded,600,600,1.0
+quadrat photos,600,600,1.0
+quadrat GPS points,600,600,1.0
+GPS accuracy <= 5 m,600,600,1.0
+herbs_present answered,600,600,1.0
