@@ -1,0 +1,85 @@
+# Herbaceous vegetation QA/QC check registry.
+# severity:  error   = must be resolved (or explicitly accepted) before the data are used in analysis
+#            warning = needs a human look; data may be fine
+#            info    = context for reviewers (protocol deviations, design notes); never blocks
+# level:     project | plot | survey | quadrat | record
+# Flags never modify data. Each check id is stable so reviewer decisions can be attached to it.
+
+params:
+  expected_quadrats: 20
+  transect_length_m: 50
+  half_length_m: 25
+  belt_half_width_m: 2.5
+  max_midpoint_shift_m: 25          # SOP: midpoint may not move > 25 m from the prescribed centroid
+  gps_accuracy_max_m: 5             # SOP: 5 m or better
+  length_tolerance_m: 10            # registered A-B allowed to differ from 50 m by this much
+  bearing_tolerance_deg: 20         # SOP: north/south axis (rotation allowed only to avoid obstacles)
+  collinearity_tolerance_m: 5       # midpoint distance from the A-B line
+  position_tolerance_m: 10          # GPS tolerance added to belt / transect bounds for quadrat points
+  position_jump_m: 15               # quadrat > this from both neighbours = isolated position error
+  survey_offset_median_m: 10        # median |offset| of a survey's quadrats from the registered line
+  duration_min_minutes: 30
+  duration_max_minutes: 180
+  min_share_quadrats_with_species: 0.5
+  background_point_max_m: 250
+  fuzzy_name_score: 88              # rapidfuzz WRatio to flag likely misspellings against the species list
+
+checks:
+  # ---- project / design -------------------------------------------------
+  - {id: D01, level: project, severity: error,   name: stratum_not_sampled, description: "A design stratum has no registered plot"}
+  - {id: D02, level: project, severity: warning, name: primary_plot_not_registered, description: "Primary (planned) plot has not been registered"}
+  # ---- plot / registration ----------------------------------------------
+  - {id: P01, level: plot, severity: info,    name: plot_not_viable, description: "Plot registered as not viable"}
+  - {id: P02, level: plot, severity: error,   name: not_viable_without_reason, description: "Plot marked not viable without a reason"}
+  - {id: P03, level: plot, severity: error,   name: multiple_registrations, description: "Centroid registered more than once / several vegplot entities"}
+  - {id: P04, level: plot, severity: error,   name: midpoint_too_far_from_centroid, description: "Registered midpoint > 25 m from prescribed centroid"}
+  - {id: P05, level: plot, severity: warning, name: transect_length_off, description: "Registered A-B length differs from 50 m (or a half from 25 m) by more than tolerance"}
+  - {id: P06, level: plot, severity: warning, name: transect_not_north_south, description: "Transect bearing deviates from the N/S axis by more than tolerance"}
+  - {id: P07, level: plot, severity: warning, name: transect_not_straight, description: "Midpoint is off the A-B line by more than tolerance"}
+  - {id: P08, level: plot, severity: warning, name: registration_gps_accuracy, description: "Endpoint or midpoint GPS accuracy worse than 5 m"}
+  - {id: P09, level: plot, severity: warning, name: viable_plot_without_accepted_survey, description: "Viable registered plot has no accepted herbaceous survey"}
+  # ---- survey ----------------------------------------------------------------
+  - {id: S01, level: survey, severity: error,   name: submission_rejected, description: "Submission was rejected in ODK Central review"}
+  - {id: S02, level: survey, severity: warning, name: duplicate_survey_for_plot, description: "More than one survey of the same plot in the same replicate"}
+  - {id: S03, level: survey, severity: error,   name: quadrat_count_not_expected, description: "Survey does not have exactly 20 quadrats"}
+  - {id: S04, level: survey, severity: error,   name: quadrat_numbers_not_sequential, description: "Quadrat numbers are not exactly 1..20"}
+  - {id: S05, level: survey, severity: error,   name: end_before_start, description: "End time is not after start time"}
+  - {id: S06, level: survey, severity: warning, name: duration_out_of_range, description: "Survey duration outside the expected range"}
+  - {id: S07, level: survey, severity: warning, name: submitted_before_end, description: "Server received the submission before the form's end time (device clock)"}
+  - {id: S08, level: survey, severity: error,   name: plot_not_registered_or_not_viable, description: "Survey on a plot that is not registered or not viable"}
+  - {id: S09, level: survey, severity: error,   name: survey_before_registration, description: "Survey started before the plot was registered"}
+  - {id: S10, level: survey, severity: info,    name: backup_plot_surveyed, description: "Survey is on a backup plot"}
+  - {id: S11, level: survey, severity: warning, name: recorder_not_in_team, description: "Recorder is not one of the selected team members"}
+  - {id: S12, level: survey, severity: warning, name: inactive_team_or_transport, description: "Selected team member or transport is inactive in the entity list"}
+  - {id: S13, level: survey, severity: warning, name: quadrats_with_species_mismatch, description: "Form summary 'quadrats with species' disagrees with the recomputed value"}
+  - {id: S14, level: survey, severity: warning, name: few_quadrats_with_species, description: "Share of quadrats with species below the minimum"}
+  - {id: S15, level: survey, severity: warning, name: background_point_far_or_missing, description: "Background geopoint missing or far from the plot"}
+  - {id: S16, level: survey, severity: error,   name: attachments_missing, description: "Fewer attachments received than expected"}
+  - {id: S17, level: survey, severity: error,   name: submission_not_confirmed, description: "Submission not confirmed by the recorder"}
+  - {id: S18, level: survey, severity: warning, name: survey_off_registered_transect, description: "Quadrats are systematically away from the registered transect line"}
+  - {id: S19, level: survey, severity: info,    name: quadrat_walk_order_differs_from_sop, description: "Quadrat GPS order suggests an out-and-back walk instead of alternating sides at each 5 m mark"}
+  # ---- quadrat ---------------------------------------------------------------
+  - {id: Q01, level: quadrat, severity: error,   name: quadrat_photo_missing, description: "Quadrat photo missing"}
+  - {id: Q02, level: quadrat, severity: error,   name: quadrat_gps_missing, description: "Quadrat geopoint missing"}
+  - {id: Q03, level: quadrat, severity: warning, name: quadrat_gps_accuracy, description: "Quadrat GPS accuracy worse than 5 m"}
+  - {id: Q04, level: quadrat, severity: warning, name: quadrat_outside_belt, description: "Quadrat further from the transect line than the belt half-width plus GPS tolerance"}
+  - {id: Q05, level: quadrat, severity: warning, name: quadrat_beyond_transect_ends, description: "Quadrat projects beyond endpoint A or B by more than GPS tolerance"}
+  - {id: Q06, level: quadrat, severity: warning, name: quadrat_position_jump, description: "Quadrat far from both neighbouring quadrats (isolated position error)"}
+  - {id: Q07, level: quadrat, severity: warning, name: duplicate_quadrat_coordinates, description: "Two quadrats of a survey share identical coordinates"}
+  - {id: Q08, level: quadrat, severity: error,   name: herbs_present_but_no_species, description: "herbs_present = yes but no species recorded"}
+  - {id: Q09, level: quadrat, severity: error,   name: herbs_absent_but_species, description: "herbs_present = no but species recorded"}
+  - {id: Q10, level: quadrat, severity: error,   name: additional_flag_without_rows, description: "additional_species_present = yes but no additional species rows"}
+  - {id: Q11, level: quadrat, severity: warning, name: species_count_mismatch, description: "count_herb_species disagrees with the number of selected species"}
+  - {id: Q12, level: quadrat, severity: info,    name: quadrat_comment, description: "Field comment recorded for the quadrat"}
+  # ---- species record --------------------------------------------------------
+  - {id: R01, level: record, severity: error,   name: species_uuid_unknown, description: "Selected species id not found in the species list"}
+  - {id: R02, level: record, severity: warning, name: species_not_herbaceous, description: "Selected species is not in the herbaceous group"}
+  - {id: R03, level: record, severity: error,   name: empty_additional_species_row, description: "Additional-species row without any species"}
+  - {id: R04, level: record, severity: warning, name: duplicate_species_in_quadrat, description: "Same taxon recorded more than once in a quadrat"}
+  - {id: R05, level: record, severity: warning, name: name_not_canonical, description: "Free-text name is not a canonical 'Genus epithet' (spacing, case, characters)"}
+  - {id: R06, level: record, severity: warning, name: missing_species_already_in_list, description: "Species entered as 'missing' already exists in the species list"}
+  - {id: R07, level: record, severity: warning, name: name_possible_misspelling, description: "Free-text name closely resembles, but does not match, a listed name"}
+  - {id: R08, level: record, severity: warning, name: same_taxon_multiple_placeholders, description: "Same missing-species name created under more than one placeholder id"}
+  - {id: R09, level: record, severity: info,    name: unknown_pending_identification, description: "Unknown morphospecies not yet identified in species_extra_ids"}
+  - {id: R10, level: record, severity: warning, name: resolution_note_exclude_or_duplicate, description: "Post-survey identification says the record is a duplicate or should be excluded"}
+  - {id: R11, level: record, severity: warning, name: new_unknown_without_macro_photo, description: "New unknown species created without a macro photo"}
