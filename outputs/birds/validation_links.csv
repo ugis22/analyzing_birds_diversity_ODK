@@ -1,0 +1,552 @@
+val_row,file_stem,common_name,val_confidence,outcome,conf3,recording_in_predictions,n_candidates,link_status,selection,is_duplicate_review
+0,RBS21_20230630_190000,Abyssinian Nightjar,0.107,1,0.107,True,1,unique,14.0,False
+1,RBS14_20230706_010000,Abyssinian Nightjar,0.109,1,0.109,True,1,unique,13.0,False
+2,RBS60_20230702_220000,Abyssinian Nightjar,0.11,1,0.11,True,2,ambiguous,,False
+3,RBS14_20230708_040002,Abyssinian Nightjar,0.113,1,0.113,False,0,recording_not_in_predictions,,False
+4,RBS55_20230701_220000,Abyssinian Nightjar,0.116,1,0.116,True,1,unique,12.0,False
+5,RBS63_20230630_000000,Abyssinian Nightjar,0.118,1,0.118,True,2,ambiguous,,False
+6,RBS21_20230701_190000,Abyssinian Nightjar,0.123,1,0.123,True,1,unique,4.0,False
+7,RBS60_20230703_230000,Abyssinian Nightjar,0.123,1,0.123,True,1,unique,135.0,False
+8,RBS21_20230624_190000,Abyssinian Nightjar,0.14,1,0.14,True,2,ambiguous,,False
+9,RBS21_20230629_200000,Abyssinian Nightjar,0.165,1,0.165,True,1,unique,31.0,False
+10,RBS14_20230710_010000,Abyssinian Nightjar,0.169,1,0.169,True,1,unique,11.0,False
+11,RBS21_20230627_210000,Abyssinian Nightjar,0.171,1,0.171,True,1,unique,9.0,False
+12,RBS21_20230624_200000,Abyssinian Nightjar,0.178,1,0.178,True,2,ambiguous,,False
+13,RBS60_20230703_230000,Abyssinian Nightjar,0.192,1,0.192,True,1,unique,42.0,False
+14,RBS51_20230701_020000,Abyssinian Nightjar,0.226,1,0.226,True,1,unique,4.0,False
+15,RBS30_20230628_200000,Abyssinian Nightjar,0.23,1,0.23,True,1,unique,91.0,False
+16,RBS14_20230703_230000,Abyssinian Nightjar,0.23,1,0.23,True,1,unique,5.0,False
+17,RBS21_20230625_210000,Abyssinian Nightjar,0.239,1,0.239,True,1,unique,18.0,False
+18,RBS21_20230624_210000,Abyssinian Nightjar,0.253,1,0.253,True,1,unique,35.0,False
+19,RBS21_20230624_060002,Abyssinian Nightjar,0.256,1,0.256,False,0,recording_not_in_predictions,,False
+20,RBS55_20230704_030002,Abyssinian Nightjar,0.278,1,0.278,False,0,recording_not_in_predictions,,False
+21,RBS63_20230702_000000,Abyssinian Nightjar,0.285,1,0.285,True,1,unique,20.0,False
+22,RBS14_20230708_020000,Abyssinian Nightjar,0.337,1,0.337,True,1,unique,163.0,False
+23,RBS63_20230702_210000,Abyssinian Nightjar,0.373,1,0.373,True,1,unique,4.0,False
+24,RBS14_20230704_190000,Abyssinian Nightjar,0.377,1,0.377,True,1,unique,6.0,False
+25,RBS55_20230630_220000,Abyssinian Nightjar,0.395,1,0.395,True,1,unique,3.0,False
+26,RBS21_20230701_020000,Abyssinian Nightjar,0.411,1,0.411,True,0,no_matching_confidence,,False
+27,RBS21_20230627_190000,Abyssinian Nightjar,0.421,1,0.421,True,1,unique,66.0,False
+28,RBS78_20230622_190000,Abyssinian Nightjar,0.422,1,0.422,True,1,unique,23.0,False
+29,RBS21_20230703_030002,Abyssinian Nightjar,0.446,1,0.446,False,0,recording_not_in_predictions,,False
+30,RBS38_20230628_220000,Abyssinian Nightjar,0.487,1,0.487,True,1,unique,1.0,False
+31,RBS21_20230629_050002,Abyssinian Nightjar,0.494,1,0.494,False,0,recording_not_in_predictions,,False
+32,RBS52_20230705_010000,Abyssinian Nightjar,0.503,1,0.503,True,1,unique,29.0,False
+33,RBS78_20230623_190000,Abyssinian Nightjar,0.518,1,0.518,True,1,unique,15.0,False
+34,RBS14_20230704_010000,Abyssinian Nightjar,0.535,1,0.535,True,1,unique,47.0,False
+35,RBS14_20230702_220000,Abyssinian Nightjar,0.548,1,0.548,True,1,unique,21.0,False
+36,RBS14_20230703_030002,Abyssinian Nightjar,0.589,1,0.589,False,0,recording_not_in_predictions,,False
+37,RBS21_20230628_200000,Abyssinian Nightjar,0.602,1,0.602,True,1,unique,31.0,False
+38,RBS14_20230703_180000,Abyssinian Nightjar,0.615,1,0.615,True,1,unique,16.0,False
+39,RBS15_20230702_220000,Abyssinian Nightjar,0.627,1,0.627,True,1,unique,24.0,False
+40,RBS14_20230703_000000,Abyssinian Nightjar,0.63,1,0.63,True,1,unique,24.0,False
+41,RBS60_20230703_010000,Abyssinian Nightjar,0.631,1,0.631,True,1,unique,99.0,False
+42,RBS15_20230627_220000,Abyssinian Nightjar,0.665,1,0.665,True,0,no_matching_confidence,,False
+43,RBS14_20230703_210000,Abyssinian Nightjar,0.702,1,0.702,True,1,unique,62.0,False
+44,RBS15_20230629_220000,Abyssinian Nightjar,0.711,1,0.711,True,1,unique,70.0,False
+45,RBS30_20230628_200000,Abyssinian Nightjar,0.711,1,0.711,True,1,unique,5.0,False
+46,RBS21_20230629_000000,Abyssinian Nightjar,0.721,1,0.721,True,1,unique,2.0,False
+47,RBS15_20230627_230000,Abyssinian Nightjar,0.727,1,0.727,True,1,unique,67.0,False
+48,RBS15_20230629_220000,Abyssinian Nightjar,0.737,1,0.737,True,1,unique,78.0,False
+49,RBS60_20230703_230000,Abyssinian Nightjar,0.739,1,0.739,True,1,unique,101.0,False
+50,RBS78_20230702_020000,Abyssinian Nightjar,0.741,1,0.741,True,1,unique,9.0,False
+51,RBS14_20230627_230000,Abyssinian Nightjar,0.75,1,0.75,True,1,unique,36.0,False
+52,RBS15_20230627_190000,Abyssinian Nightjar,0.777,1,0.777,True,1,unique,88.0,False
+53,RBS15_20230628_050002,Abyssinian Nightjar,0.854,1,0.854,False,0,recording_not_in_predictions,,False
+54,RBS21_20230630_190000,Abyssinian Nightjar,0.868,1,0.868,True,1,unique,2.0,False
+55,RBS15_20230629_210000,Abyssinian Nightjar,0.899,1,0.899,True,1,unique,17.0,False
+56,RBS55_20230704_190000,Abyssinian Nightjar,0.909,1,0.909,True,1,unique,9.0,False
+57,RBS14_20230708_020000,Abyssinian Nightjar,0.933,1,0.933,True,2,ambiguous,,False
+58,RBS15_20230701_220000,Abyssinian Nightjar,0.942,1,0.942,True,1,unique,10.0,False
+59,RBS14_20230706_030002,Abyssinian Nightjar,0.946,1,0.946,False,0,recording_not_in_predictions,,False
+60,RBS15_20230627_210000,Abyssinian Nightjar,0.947,1,0.947,True,1,unique,122.0,False
+61,RBS15_20230627_190000,Abyssinian Nightjar,0.969,1,0.969,True,1,unique,104.0,False
+62,RBS15_20230630_200000,Abyssinian Nightjar,0.97,1,0.97,True,1,unique,62.0,False
+63,RBS21_20230703_190000,Abyssinian Nightjar,0.983,1,0.983,True,1,unique,21.0,False
+64,RBS52_20230705_010000,Abyssinian Nightjar,0.984,1,0.984,True,2,ambiguous,,False
+65,RBS15_20230628_050002,Abyssinian Nightjar,0.999,1,0.999,False,0,recording_not_in_predictions,,False
+66,RBS15_20230630_020000,Abyssinian Nightjar,1.0,1,1.0,True,10,ambiguous,,False
+67,RBS79_20230709_210000,Abyssinian Nightjar,0.102,0,0.102,True,8,ambiguous,,False
+68,RBS75_20230703_200000,Abyssinian Nightjar,0.102,0,0.102,True,4,ambiguous,,False
+69,RBS79_20230702_210000,Abyssinian Nightjar,0.102,0,0.102,True,1,unique,2.0,False
+70,RBS75_20230627_210000,Abyssinian Nightjar,0.103,0,0.103,True,3,ambiguous,,False
+71,RBS79_20230709_210000,Abyssinian Nightjar,0.104,0,0.104,True,6,ambiguous,,False
+72,RBS79_20230709_220000,Abyssinian Nightjar,0.105,0,0.105,True,3,ambiguous,,False
+73,RBS79_20230706_200000,Abyssinian Nightjar,0.114,0,0.114,True,1,unique,37.0,False
+74,RBS79_20230711_200000,Abyssinian Nightjar,0.115,0,0.115,True,1,unique,9.0,False
+75,RBS75_20230702_200000,Abyssinian Nightjar,0.115,0,0.115,True,7,ambiguous,,False
+76,RBS79_20230709_210000,Abyssinian Nightjar,0.118,0,0.118,True,6,ambiguous,,False
+77,RBS79_20230702_210000,Abyssinian Nightjar,0.119,0,0.119,True,2,ambiguous,,False
+78,RBS75_20230628_190000,Abyssinian Nightjar,0.122,0,0.122,True,1,unique,1.0,False
+79,RBS79_20230709_220000,Abyssinian Nightjar,0.123,0,0.123,True,1,unique,35.0,False
+80,RBS40_20230703_170000,Abyssinian Nightjar,0.126,0,0.126,True,1,unique,3.0,False
+81,RBS75_20230629_200000,Abyssinian Nightjar,0.126,0,0.126,True,2,ambiguous,,False
+82,RBS79_20230709_200000,Abyssinian Nightjar,0.133,0,0.133,True,2,ambiguous,,False
+83,RBS79_20230710_200000,Abyssinian Nightjar,0.139,0,0.139,True,2,ambiguous,,False
+84,RBS40_20230702_180000,Abyssinian Nightjar,0.139,0,0.139,True,1,unique,10.0,False
+85,RBS75_20230702_200000,Abyssinian Nightjar,0.14,0,0.14,True,2,ambiguous,,False
+86,RBS79_20230706_210000,Abyssinian Nightjar,0.151,0,0.151,True,1,unique,147.0,False
+87,RBS75_20230702_190000,Abyssinian Nightjar,0.153,0,0.153,True,2,ambiguous,,False
+88,RBS79_20230710_190000,Abyssinian Nightjar,0.155,0,0.155,True,2,ambiguous,,False
+89,RBS79_20230709_210000,Abyssinian Nightjar,0.16,0,0.16,True,2,ambiguous,,False
+90,RBS79_20230706_210000,Abyssinian Nightjar,0.163,0,0.163,True,1,unique,189.0,False
+91,RBS75_20230702_190000,Abyssinian Nightjar,0.165,0,0.165,True,1,unique,7.0,False
+92,RBS75_20230702_190000,Abyssinian Nightjar,0.182,0,0.182,True,1,unique,43.0,False
+93,RBS79_20230706_190000,Abyssinian Nightjar,0.186,0,0.186,True,1,unique,43.0,False
+94,RBS75_20230702_210000,Abyssinian Nightjar,0.186,0,0.186,True,3,ambiguous,,False
+95,RBS02_20230623_190000,Abyssinian Nightjar,0.191,0,0.191,True,0,no_matching_confidence,,False
+96,RBS79_20230706_210000,Abyssinian Nightjar,0.221,0,0.221,True,1,unique,49.0,False
+97,RBS79_20230709_220000,Abyssinian Nightjar,0.23,0,0.23,True,1,unique,54.0,False
+98,RBS79_20230705_190000,Abyssinian Nightjar,0.273,0,0.273,True,1,unique,27.0,False
+99,RBS40_20230710_160000,Abyssinian Nightjar,0.396,0,0.396,True,1,unique,11.0,False
+100,RBS14_20230710_010000,Abyssinian Nightjar,0.864,1,0.864,True,1,unique,35.0,False
+101,RBS14_20230704_220000,Abyssinian Nightjar,0.866,1,0.866,True,2,ambiguous,,False
+102,RBS14_20230703_000000,Abyssinian Nightjar,0.869,1,0.869,True,1,unique,32.0,False
+103,RBS15_20230701_220000,Abyssinian Nightjar,0.881,1,0.881,True,1,unique,2.0,False
+104,RBS15_20230628_050002,Abyssinian Nightjar,0.884,1,0.884,False,0,recording_not_in_predictions,,False
+105,RBS14_20230704_000000,Abyssinian Nightjar,0.889,1,0.889,True,1,unique,9.0,False
+106,RBS40_20230704_010002,Abyssinian Nightjar,0.898,1,0.898,False,0,recording_not_in_predictions,,False
+107,RBS15_20230629_220000,Abyssinian Nightjar,0.902,1,0.902,True,1,unique,73.0,False
+108,RBS60_20230703_010000,Abyssinian Nightjar,0.913,1,0.913,True,0,no_matching_confidence,,False
+109,RBS15_20230627_190000,Abyssinian Nightjar,0.917,1,0.917,True,1,unique,119.0,False
+110,RBS15_20230627_210000,Abyssinian Nightjar,0.931,1,0.931,True,1,unique,105.0,False
+111,RBS14_20230629_220000,Abyssinian Nightjar,0.931,1,0.931,True,1,unique,4.0,False
+112,RBS14_20230703_210000,Abyssinian Nightjar,0.937,1,0.937,True,2,ambiguous,,False
+113,RBS14_20230628_230000,Abyssinian Nightjar,0.938,1,0.938,True,1,unique,9.0,False
+114,RBS14_20230704_220000,Abyssinian Nightjar,0.942,1,0.942,True,1,unique,49.0,False
+115,RBS15_20230627_190000,Abyssinian Nightjar,0.942,1,0.942,True,2,ambiguous,,False
+116,RBS15_20230628_190000,Abyssinian Nightjar,0.944,1,0.944,True,1,unique,51.0,False
+117,RBS15_20230627_210000,Abyssinian Nightjar,0.951,1,0.951,True,1,unique,89.0,False
+118,RBS14_20230703_210000,Abyssinian Nightjar,0.972,1,0.972,True,2,ambiguous,,False
+119,RBS55_20230630_190000,Abyssinian Nightjar,0.973,1,0.973,True,2,ambiguous,,False
+120,RBS21_20230625_190000,Abyssinian Nightjar,0.974,1,0.974,True,1,unique,30.0,False
+121,RBS55_20230629_190000,Abyssinian Nightjar,0.975,1,0.975,True,1,unique,6.0,False
+122,RBS14_20230704_020000,Abyssinian Nightjar,0.976,1,0.976,True,1,unique,37.0,False
+123,RBS21_20230627_190000,Abyssinian Nightjar,0.976,1,0.976,True,1,unique,28.0,False
+124,RBS15_20230627_210000,Abyssinian Nightjar,0.976,1,0.976,True,3,ambiguous,,False
+125,RBS21_20230625_190000,Abyssinian Nightjar,0.98,1,0.98,True,1,unique,32.0,False
+126,RBS14_20230703_020000,Abyssinian Nightjar,0.982,1,0.982,True,1,unique,19.0,False
+127,RBS14_20230703_210000,Abyssinian Nightjar,0.982,1,0.982,True,1,unique,1.0,False
+128,RBS15_20230627_230000,Abyssinian Nightjar,0.983,1,0.983,True,1,unique,4.0,False
+129,RBS14_20230629_220000,Abyssinian Nightjar,0.986,1,0.986,True,1,unique,5.0,False
+130,RBS14_20230705_230000,Abyssinian Nightjar,0.991,1,0.991,True,3,ambiguous,,False
+131,RBS15_20230630_200000,Abyssinian Nightjar,0.991,1,0.991,True,1,unique,53.0,False
+132,RBS14_20230703_200000,Abyssinian Nightjar,0.992,1,0.992,True,2,ambiguous,,False
+133,RBS14_20230708_020000,Abyssinian Nightjar,0.992,1,0.992,True,4,ambiguous,,False
+134,RBS14_20230703_200000,Abyssinian Nightjar,0.995,1,0.995,True,2,ambiguous,,False
+135,RBS14_20230705_030002,Abyssinian Nightjar,0.995,1,0.995,False,0,recording_not_in_predictions,,False
+136,RBS14_20230708_020000,Abyssinian Nightjar,0.995,1,0.995,True,4,ambiguous,,False
+137,RBS14_20230629_200000,Abyssinian Nightjar,0.996,1,0.996,True,1,unique,9.0,False
+138,RBS15_20230627_190000,Abyssinian Nightjar,0.996,1,0.996,True,3,ambiguous,,False
+139,RBS14_20230708_020000,Abyssinian Nightjar,0.997,1,0.997,True,6,ambiguous,,False
+140,RBS52_20230705_010000,Abyssinian Nightjar,0.997,1,0.997,True,2,ambiguous,,False
+141,RBS14_20230703_020000,Abyssinian Nightjar,0.997,1,0.997,True,1,unique,49.0,False
+142,RBS15_20230630_010000,Abyssinian Nightjar,0.997,1,0.997,True,1,unique,21.0,False
+143,RBS15_20230630_000000,Abyssinian Nightjar,0.998,1,0.998,True,6,ambiguous,,False
+144,RBS21_20230623_190000,Abyssinian Nightjar,0.998,1,0.998,True,1,unique,51.0,False
+145,RBS52_20230705_010000,Abyssinian Nightjar,0.998,1,0.998,True,3,ambiguous,,False
+146,RBS15_20230629_210000,Abyssinian Nightjar,0.999,1,0.999,True,1,unique,18.0,False
+147,RBS15_20230630_010000,Abyssinian Nightjar,0.999,1,0.999,True,4,ambiguous,,False
+148,RBS15_20230701_200000,Abyssinian Nightjar,0.999,1,0.999,True,8,ambiguous,,False
+149,RBS15_20230701_200000,Abyssinian Nightjar,1.0,1,1.0,True,11,ambiguous,,False
+150,RBS21_20230629_060002,African Black-headed Oriole,0.104,1,0.104,False,0,recording_not_in_predictions,,False
+151,RBS38_20230630_150000,African Black-headed Oriole,0.106,1,0.106,True,1,unique,23.0,False
+152,RBS58_20230630_100001,African Black-headed Oriole,0.106,1,0.106,False,0,recording_not_in_predictions,,False
+153,RBS14_20230701_120002,African Black-headed Oriole,0.106,1,0.106,False,0,recording_not_in_predictions,,False
+154,RBS21_20230628_060002,African Black-headed Oriole,0.108,1,0.108,False,0,recording_not_in_predictions,,False
+155,RBS58_20230701_090002,African Black-headed Oriole,0.11,1,0.11,False,0,recording_not_in_predictions,,False
+156,RBS58_20230706_090002,African Black-headed Oriole,0.111,1,0.111,False,0,recording_not_in_predictions,,False
+157,RBS58_20230703_080002,African Black-headed Oriole,0.114,1,0.114,False,0,recording_not_in_predictions,,False
+158,RBS58_20230630_070001,African Black-headed Oriole,0.117,1,0.117,False,0,recording_not_in_predictions,,False
+159,RBS21_20230624_060002,African Black-headed Oriole,0.123,1,0.123,False,0,recording_not_in_predictions,,False
+160,RBS58_20230629_150250,African Black-headed Oriole,0.126,1,0.126,False,0,recording_not_in_predictions,,False
+161,RBS71_20230701_030002,African Black-headed Oriole,0.132,1,0.132,False,0,recording_not_in_predictions,,False
+162,RBS14_20230628_100002,African Black-headed Oriole,0.133,1,0.133,False,0,recording_not_in_predictions,,False
+163,RBS51_20230708_060002,African Black-headed Oriole,0.137,1,0.137,False,0,recording_not_in_predictions,,False
+164,RBS40_20230703_050002,African Black-headed Oriole,0.14,1,0.14,False,0,recording_not_in_predictions,,False
+165,RBS58_20230708_070002,African Black-headed Oriole,0.146,1,0.146,False,0,recording_not_in_predictions,,False
+166,RBS58_20230703_100002,African Black-headed Oriole,0.149,1,0.149,False,0,recording_not_in_predictions,,False
+167,RBS58_20230711_100002,African Black-headed Oriole,0.15,1,0.15,False,0,recording_not_in_predictions,,False
+168,RBS58_20230702_060002,African Black-headed Oriole,0.15,1,0.15,False,0,recording_not_in_predictions,,False
+169,RBS58_20230709_090002,African Black-headed Oriole,0.154,1,0.154,False,0,recording_not_in_predictions,,False
+170,RBS38_20230701_080002,African Black-headed Oriole,0.159,1,0.159,False,0,recording_not_in_predictions,,False
+171,RBS38_20230630_070002,African Black-headed Oriole,0.162,1,0.162,False,0,recording_not_in_predictions,,False
+172,RBS75_20230629_070002,African Black-headed Oriole,0.164,1,0.164,False,0,recording_not_in_predictions,,False
+173,RBS58_20230705_090002,African Black-headed Oriole,0.165,1,0.165,False,0,recording_not_in_predictions,,False
+174,RBS51_20230702_180000,African Black-headed Oriole,0.17,1,0.17,True,1,unique,3.0,False
+175,RBS38_20230628_160000,African Black-headed Oriole,0.178,1,0.178,True,1,unique,27.0,False
+176,RBS15_20230702_180000,African Black-headed Oriole,0.178,1,0.178,True,1,unique,2.0,False
+177,RBS52_20230702_060002,African Black-headed Oriole,0.179,1,0.179,False,0,recording_not_in_predictions,,False
+178,RBS14_20230706_070002,African Black-headed Oriole,0.181,1,0.181,False,0,recording_not_in_predictions,,False
+179,RBS75_20230629_130002,African Black-headed Oriole,0.183,1,0.183,False,0,recording_not_in_predictions,,False
+180,RBS79_20230708_060002,African Black-headed Oriole,0.187,1,0.187,False,0,recording_not_in_predictions,,False
+181,RBS58_20230706_070002,African Black-headed Oriole,0.196,1,0.196,False,0,recording_not_in_predictions,,False
+182,RBS55_20230629_060002,African Black-headed Oriole,0.197,1,0.197,False,0,recording_not_in_predictions,,False
+183,RBS52_20230711_060002,African Black-headed Oriole,0.204,1,0.204,False,0,recording_not_in_predictions,,False
+184,RBS58_20230706_070002,African Black-headed Oriole,0.212,1,0.212,False,0,recording_not_in_predictions,,False
+185,RBS21_20230703_170000,African Black-headed Oriole,0.215,1,0.215,True,1,unique,7.0,False
+186,RBS58_20230712_070002,African Black-headed Oriole,0.217,1,0.217,False,0,recording_not_in_predictions,,False
+187,RBS75_20230703_060002,African Black-headed Oriole,0.222,1,0.222,False,0,recording_not_in_predictions,,False
+188,RBS52_20230711_090002,African Black-headed Oriole,0.224,1,0.224,False,0,recording_not_in_predictions,,False
+189,RBS52_20230706_180000,African Black-headed Oriole,0.225,1,0.225,True,2,ambiguous,,False
+190,RBS51_20230704_100002,African Black-headed Oriole,0.232,1,0.232,False,0,recording_not_in_predictions,,False
+191,RBS14_20230706_070002,African Black-headed Oriole,0.234,1,0.234,False,0,recording_not_in_predictions,,False
+192,RBS14_20230708_080002,African Black-headed Oriole,0.235,1,0.235,False,0,recording_not_in_predictions,,False
+193,RBS55_20230703_080002,African Black-headed Oriole,0.242,1,0.242,False,0,recording_not_in_predictions,,False
+194,RBS21_20230622_180000,African Black-headed Oriole,0.244,1,0.244,True,1,unique,6.0,False
+195,RBS21_20230625_070002,African Black-headed Oriole,0.249,1,0.249,False,0,recording_not_in_predictions,,False
+196,RBS58_20230705_070002,African Black-headed Oriole,0.258,1,0.258,False,0,recording_not_in_predictions,,False
+197,RBS14_20230708_080002,African Black-headed Oriole,0.265,1,0.265,False,0,recording_not_in_predictions,,False
+198,RBS75_20230630_060002,African Black-headed Oriole,0.278,1,0.278,False,0,recording_not_in_predictions,,False
+199,RBS71_20230622_093247,African Black-headed Oriole,0.305,1,0.305,False,0,recording_not_in_predictions,,False
+200,RBS71_20230625_090002,African Black-headed Oriole,0.311,1,0.311,False,0,recording_not_in_predictions,,False
+201,RBS39_20230705_060002,African Black-headed Oriole,0.316,1,0.316,False,0,recording_not_in_predictions,,False
+202,RBS58_20230702_080002,African Black-headed Oriole,0.337,1,0.337,False,0,recording_not_in_predictions,,False
+203,RBS58_20230703_150000,African Black-headed Oriole,0.339,1,0.339,True,0,no_matching_confidence,,False
+204,RBS14_20230628_080002,African Black-headed Oriole,0.34,1,0.34,False,0,recording_not_in_predictions,,False
+205,RBS14_20230706_070002,African Black-headed Oriole,0.365,1,0.365,False,0,recording_not_in_predictions,,False
+206,RBS52_20230711_070002,African Black-headed Oriole,0.368,1,0.368,False,0,recording_not_in_predictions,,False
+207,RBS14_20230706_070002,African Black-headed Oriole,0.378,1,0.378,False,0,recording_not_in_predictions,,False
+208,RBS58_20230630_070001,African Black-headed Oriole,0.379,1,0.379,False,0,recording_not_in_predictions,,False
+209,RBS38_20230701_060002,African Black-headed Oriole,0.392,1,0.392,False,0,recording_not_in_predictions,,False
+210,RBS55_20230628_170000,African Black-headed Oriole,0.395,1,0.395,True,1,unique,5.0,False
+211,RBS58_20230702_080002,African Black-headed Oriole,0.397,1,0.397,False,0,recording_not_in_predictions,,False
+212,RBS58_20230709_150000,African Black-headed Oriole,0.4,1,0.4,True,1,unique,2.0,False
+213,RBS51_20230630_160000,African Black-headed Oriole,0.401,1,0.401,True,0,no_matching_confidence,,False
+214,RBS14_20230627_134346,African Black-headed Oriole,0.429,1,0.429,False,0,recording_not_in_predictions,,False
+215,RBS58_20230701_080002,African Black-headed Oriole,0.431,1,0.431,False,0,recording_not_in_predictions,,False
+216,RBS58_20230703_160000,African Black-headed Oriole,0.433,1,0.433,True,0,no_matching_confidence,,False
+217,RBS52_20230629_101606,African Black-headed Oriole,0.452,1,0.452,False,0,recording_not_in_predictions,,False
+218,RBS58_20230709_060002,African Black-headed Oriole,0.468,1,0.468,False,0,recording_not_in_predictions,,False
+219,RBS71_20230626_040002,African Black-headed Oriole,0.491,1,0.491,False,0,recording_not_in_predictions,,False
+220,RBS52_20230711_060002,African Black-headed Oriole,0.493,1,0.493,False,0,recording_not_in_predictions,,False
+221,RBS21_20230626_180000,African Black-headed Oriole,0.494,1,0.494,True,1,unique,11.0,False
+222,RBS14_20230627_124346,African Black-headed Oriole,0.499,1,0.499,False,0,recording_not_in_predictions,,False
+223,RBS58_20230710_160000,African Black-headed Oriole,0.549,1,0.549,True,1,unique,1.0,False
+224,RBS52_20230711_070002,African Black-headed Oriole,0.55,1,0.55,False,0,recording_not_in_predictions,,False
+225,RBS21_20230623_060002,African Black-headed Oriole,0.591,1,0.591,False,0,recording_not_in_predictions,,False
+226,RBS58_20230702_100002,African Black-headed Oriole,0.596,1,0.596,False,0,recording_not_in_predictions,,False
+227,RBS38_20230630_080002,African Black-headed Oriole,0.655,1,0.655,False,0,recording_not_in_predictions,,False
+228,RBS58_20230630_070001,African Black-headed Oriole,0.671,1,0.671,False,0,recording_not_in_predictions,,False
+229,RBS15_20230702_100002,African Black-headed Oriole,0.672,1,0.672,False,0,recording_not_in_predictions,,False
+230,RBS52_20230703_070002,African Black-headed Oriole,0.677,1,0.677,False,0,recording_not_in_predictions,,False
+231,RBS58_20230707_080002,African Black-headed Oriole,0.678,1,0.678,False,0,recording_not_in_predictions,,False
+232,RBS52_20230704_100002,African Black-headed Oriole,0.691,1,0.691,False,0,recording_not_in_predictions,,False
+233,RBS14_20230627_104346,African Black-headed Oriole,0.712,1,0.712,False,0,recording_not_in_predictions,,False
+234,RBS71_20230703_030002,African Black-headed Oriole,0.752,1,0.752,False,0,recording_not_in_predictions,,False
+235,RBS21_20230627_060002,African Black-headed Oriole,0.761,1,0.761,False,0,recording_not_in_predictions,,False
+236,RBS58_20230703_090002,African Black-headed Oriole,0.762,1,0.762,False,0,recording_not_in_predictions,,False
+237,RBS58_20230709_100002,African Black-headed Oriole,0.783,1,0.783,False,0,recording_not_in_predictions,,False
+238,RBS58_20230702_100002,African Black-headed Oriole,0.812,1,0.812,False,0,recording_not_in_predictions,,False
+239,RBS15_20230703_090002,African Black-headed Oriole,0.822,1,0.822,False,0,recording_not_in_predictions,,False
+240,RBS58_20230701_080002,African Black-headed Oriole,0.841,1,0.841,False,0,recording_not_in_predictions,,False
+241,RBS58_20230707_100002,African Black-headed Oriole,0.873,1,0.873,False,0,recording_not_in_predictions,,False
+242,RBS52_20230706_070002,African Black-headed Oriole,0.876,1,0.876,False,0,recording_not_in_predictions,,False
+243,RBS58_20230702_060002,African Black-headed Oriole,0.885,1,0.885,False,0,recording_not_in_predictions,,False
+244,RBS14_20230703_090002,African Black-headed Oriole,0.895,1,0.895,False,0,recording_not_in_predictions,,False
+245,RBS52_20230630_080002,African Black-headed Oriole,0.915,1,0.915,False,0,recording_not_in_predictions,,False
+246,RBS38_20230630_160000,African Black-headed Oriole,0.917,1,0.917,True,1,unique,23.0,False
+247,RBS44_20230704_160000,African Black-headed Oriole,0.97,1,0.97,True,1,unique,12.0,False
+248,RBS58_20230630_100001,African Black-headed Oriole,0.972,1,0.972,False,0,recording_not_in_predictions,,False
+249,RBS38_20230701_070002,African Black-headed Oriole,0.989,1,0.989,False,0,recording_not_in_predictions,,False
+250,RBS52_20230702_180000,African Black-headed Oriole,0.853,1,0.853,True,1,unique,2.0,False
+251,RBS51_20230703_160000,African Black-headed Oriole,0.855,1,0.855,True,1,unique,13.0,False
+252,RBS52_20230711_080002,African Black-headed Oriole,0.857,1,0.857,False,0,recording_not_in_predictions,,False
+253,RBS58_20230701_080002,African Black-headed Oriole,0.859,1,0.859,False,0,recording_not_in_predictions,,False
+254,RBS71_20230623_040002,African Black-headed Oriole,0.864,1,0.864,False,0,recording_not_in_predictions,,False
+255,RBS38_20230628_070002,African Black-headed Oriole,0.87,1,0.87,False,0,recording_not_in_predictions,,False
+256,RBS58_20230708_090002,African Black-headed Oriole,0.872,1,0.872,False,0,recording_not_in_predictions,,False
+257,RBS58_20230701_080002,African Black-headed Oriole,0.872,1,0.872,False,0,recording_not_in_predictions,,False
+258,RBS58_20230705_060002,African Black-headed Oriole,0.875,1,0.875,False,0,recording_not_in_predictions,,False
+259,RBS58_20230630_150000,African Black-headed Oriole,0.876,1,0.876,True,1,unique,83.0,False
+260,RBS75_20230629_070002,African Black-headed Oriole,0.876,1,0.876,False,0,recording_not_in_predictions,,False
+261,RBS58_20230703_160000,African Black-headed Oriole,0.883,1,0.883,True,1,unique,104.0,False
+262,RBS58_20230701_080002,African Black-headed Oriole,0.883,1,0.883,False,0,recording_not_in_predictions,,False
+263,RBS58_20230630_100001,African Black-headed Oriole,0.89,1,0.89,False,0,recording_not_in_predictions,,False
+264,RBS21_20230626_180000,African Black-headed Oriole,0.895,1,0.895,True,1,unique,24.0,False
+265,RBS38_20230629_070002,African Black-headed Oriole,0.897,1,0.897,False,0,recording_not_in_predictions,,False
+266,RBS38_20230630_150000,African Black-headed Oriole,0.9,1,0.9,True,1,unique,73.0,False
+267,RBS71_20230701_050002,African Black-headed Oriole,0.9,1,0.9,False,0,recording_not_in_predictions,,False
+268,RBS38_20230630_080002,African Black-headed Oriole,0.9,1,0.9,False,0,recording_not_in_predictions,,False
+269,RBS71_20230628_050002,African Black-headed Oriole,0.901,1,0.901,False,0,recording_not_in_predictions,,False
+270,RBS58_20230703_090002,African Black-headed Oriole,0.904,1,0.904,False,0,recording_not_in_predictions,,False
+271,RBS14_20230629_070002,African Black-headed Oriole,0.915,1,0.915,False,0,recording_not_in_predictions,,False
+272,RBS38_20230629_070002,African Black-headed Oriole,0.918,1,0.918,False,0,recording_not_in_predictions,,False
+273,RBS58_20230705_180000,African Black-headed Oriole,0.92,1,0.92,True,1,unique,85.0,False
+274,RBS58_20230708_100002,African Black-headed Oriole,0.924,1,0.924,False,0,recording_not_in_predictions,,False
+275,RBS21_20230628_100002,African Black-headed Oriole,0.927,1,0.927,False,0,recording_not_in_predictions,,False
+276,RBS58_20230703_150000,African Black-headed Oriole,0.928,1,0.928,True,1,unique,94.0,False
+277,RBS38_20230630_080002,African Black-headed Oriole,0.93,1,0.93,False,0,recording_not_in_predictions,,False
+278,RBS58_20230703_150000,African Black-headed Oriole,0.932,1,0.932,True,1,unique,141.0,False
+279,RBS52_20230708_070002,African Black-headed Oriole,0.933,1,0.933,False,0,recording_not_in_predictions,,False
+280,RBS58_20230703_170000,African Black-headed Oriole,0.933,1,0.933,True,1,unique,44.0,False
+281,RBS52_20230629_170000,African Black-headed Oriole,0.936,1,0.936,True,1,unique,15.0,False
+282,RBS58_20230701_080002,African Black-headed Oriole,0.938,1,0.938,False,0,recording_not_in_predictions,,False
+283,RBS58_20230708_090002,African Black-headed Oriole,0.939,1,0.939,False,0,recording_not_in_predictions,,False
+284,RBS15_20230703_090002,African Black-headed Oriole,0.941,1,0.941,False,0,recording_not_in_predictions,,False
+285,RBS21_20230701_150000,African Black-headed Oriole,0.942,1,0.942,True,1,unique,5.0,False
+286,RBS52_20230706_060002,African Black-headed Oriole,0.951,1,0.951,False,0,recording_not_in_predictions,,False
+287,RBS58_20230708_100002,African Black-headed Oriole,0.953,1,0.953,False,0,recording_not_in_predictions,,False
+288,RBS21_20230701_150000,African Black-headed Oriole,0.955,1,0.955,True,1,unique,7.0,False
+289,RBS21_20230701_060002,African Black-headed Oriole,0.956,1,0.956,False,0,recording_not_in_predictions,,False
+290,RBS21_20230623_060002,African Black-headed Oriole,0.957,1,0.957,False,0,recording_not_in_predictions,,False
+291,RBS21_20230701_060002,African Black-headed Oriole,0.963,1,0.963,False,0,recording_not_in_predictions,,False
+292,RBS58_20230702_070002,African Black-headed Oriole,0.965,1,0.965,False,0,recording_not_in_predictions,,False
+293,RBS58_20230708_090002,African Black-headed Oriole,0.965,1,0.965,False,0,recording_not_in_predictions,,False
+294,RBS58_20230703_170000,African Black-headed Oriole,0.968,1,0.968,True,1,unique,15.0,False
+295,RBS58_20230703_170000,African Black-headed Oriole,0.971,1,0.971,True,2,ambiguous,,False
+296,RBS58_20230708_090002,African Black-headed Oriole,0.978,1,0.978,False,0,recording_not_in_predictions,,False
+297,RBS58_20230708_100002,African Black-headed Oriole,0.978,1,0.978,False,0,recording_not_in_predictions,,False
+298,RBS58_20230708_100002,African Black-headed Oriole,0.982,1,0.982,False,0,recording_not_in_predictions,,False
+299,RBS58_20230708_100002,African Black-headed Oriole,0.984,1,0.984,False,0,recording_not_in_predictions,,False
+300,RBS55_20230628_060002,Red-billed Firefinch,0.148,1,0.148,False,0,recording_not_in_predictions,,False
+301,RBS55_20230703_150000,Red-billed Firefinch,0.149,1,0.149,True,1,unique,2.0,False
+302,RBS55_20230628_100002,Red-billed Firefinch,0.15,1,0.15,False,0,recording_not_in_predictions,,False
+303,RBS30_20230702_070002,Red-billed Firefinch,0.152,1,0.152,False,0,recording_not_in_predictions,,False
+304,RBS40_20230707_030002,Red-billed Firefinch,0.298,1,0.298,False,0,recording_not_in_predictions,,False
+305,RBS62_20230620_070002,Red-billed Firefinch,0.101,0,0.101,False,0,recording_not_in_predictions,,False
+306,RBS55_20230703_150000,Red-billed Firefinch,0.102,0,0.102,True,1,unique,3.0,False
+307,RBS30_20230705_170000,Red-billed Firefinch,0.103,0,0.103,True,1,unique,2.0,False
+308,RBS55_20230703_150000,Red-billed Firefinch,0.103,0,0.103,True,1,unique,5.0,False
+309,RBS30_20230623_100002,Red-billed Firefinch,0.103,0,0.103,False,0,recording_not_in_predictions,,False
+310,RBS55_20230702_150000,Red-billed Firefinch,0.106,0,0.106,True,1,unique,1.0,False
+311,RBS75_20230705_080002,Red-billed Firefinch,0.107,0,0.107,False,0,recording_not_in_predictions,,False
+312,RBS51_20230708_180000,Red-billed Firefinch,0.107,0,0.107,True,1,unique,1.0,False
+313,RBS63_20230707_060002,Red-billed Firefinch,0.108,0,0.108,False,0,recording_not_in_predictions,,False
+314,RBS55_20230701_090002,Red-billed Firefinch,0.109,0,0.109,False,0,recording_not_in_predictions,,False
+315,RBS51_20230702_080002,Red-billed Firefinch,0.111,0,0.111,False,0,recording_not_in_predictions,,False
+316,RBS47_20230630_160000,Red-billed Firefinch,0.111,0,0.111,True,1,unique,5.0,False
+317,RBS75_20230628_090002,Red-billed Firefinch,0.112,0,0.112,False,0,recording_not_in_predictions,,False
+318,RBS30_20230629_080002,Red-billed Firefinch,0.113,0,0.113,False,0,recording_not_in_predictions,,False
+319,RBS17_20230705_060002,Red-billed Firefinch,0.113,0,0.113,False,0,recording_not_in_predictions,,False
+320,RBS75_20230708_160000,Red-billed Firefinch,0.114,0,0.114,True,1,unique,2.0,False
+321,RBS75_20230702_120002,Red-billed Firefinch,0.114,0,0.114,False,0,recording_not_in_predictions,,False
+322,RBS52_20230703_100002,Red-billed Firefinch,0.115,0,0.115,False,0,recording_not_in_predictions,,False
+323,RBS75_20230708_170000,Red-billed Firefinch,0.116,0,0.116,True,1,unique,1.0,False
+324,RBS40_20230710_150000,Red-billed Firefinch,0.117,0,0.117,True,1,unique,1.0,False
+325,RBS58_20230701_090002,Red-billed Firefinch,0.117,0,0.117,False,0,recording_not_in_predictions,,False
+326,RBS75_20230629_060002,Red-billed Firefinch,0.118,0,0.118,False,0,recording_not_in_predictions,,False
+327,RBS53_20230621_060002,Red-billed Firefinch,0.118,0,0.118,False,0,recording_not_in_predictions,,False
+328,RBS55_20230702_080002,Red-billed Firefinch,0.118,0,0.118,False,0,recording_not_in_predictions,,False
+329,RBS02_20230701_170000,Red-billed Firefinch,0.119,0,0.119,True,1,unique,1.0,False
+330,RBS47_20230630_150000,Red-billed Firefinch,0.12,0,0.12,True,1,unique,1.0,False
+331,RBS75_20230701_150000,Red-billed Firefinch,0.12,0,0.12,True,1,unique,4.0,False
+332,RBS47_20230630_160000,Red-billed Firefinch,0.12,0,0.12,True,1,unique,4.0,False
+333,RBS51_20230704_070002,Red-billed Firefinch,0.12,0,0.12,False,0,recording_not_in_predictions,,False
+334,RBS51_20230704_080002,Red-billed Firefinch,0.121,0,0.121,False,0,recording_not_in_predictions,,False
+335,RBS51_20230630_102946,Red-billed Firefinch,0.123,0,0.123,False,0,recording_not_in_predictions,,False
+336,RBS75_20230706_070002,Red-billed Firefinch,0.124,0,0.124,False,0,recording_not_in_predictions,,False
+337,RBS75_20230701_150000,Red-billed Firefinch,0.125,0,0.125,True,1,unique,3.0,False
+338,RBS17_20230630_150000,Red-billed Firefinch,0.126,0,0.126,True,1,unique,1.0,False
+339,RBS47_20230706_070002,Red-billed Firefinch,0.127,0,0.127,False,0,recording_not_in_predictions,,False
+340,RBS75_20230630_070002,Red-billed Firefinch,0.127,0,0.127,False,0,recording_not_in_predictions,,False
+341,RBS30_20230625_070002,Red-billed Firefinch,0.127,0,0.127,False,0,recording_not_in_predictions,,False
+342,RBS52_20230703_060002,Red-billed Firefinch,0.127,0,0.127,False,0,recording_not_in_predictions,,False
+343,RBS40_20230706_040002,Red-billed Firefinch,0.129,0,0.129,False,0,recording_not_in_predictions,,False
+344,RBS47_20230705_080002,Red-billed Firefinch,0.129,0,0.129,False,0,recording_not_in_predictions,,False
+345,RBS75_20230630_060002,Red-billed Firefinch,0.13,0,0.13,False,0,recording_not_in_predictions,,False
+346,RBS47_20230630_160000,Red-billed Firefinch,0.13,0,0.13,True,1,unique,2.0,False
+347,RBS75_20230629_120002,Red-billed Firefinch,0.132,0,0.132,False,0,recording_not_in_predictions,,False
+348,RBS51_20230706_080002,Red-billed Firefinch,0.134,0,0.134,False,0,recording_not_in_predictions,,False
+349,RBS30_20230630_070002,Red-billed Firefinch,0.135,0,0.135,False,0,recording_not_in_predictions,,False
+350,RBS47_20230706_080002,Red-billed Firefinch,0.136,0,0.136,False,0,recording_not_in_predictions,,False
+351,RBS40_20230712_030001,Red-billed Firefinch,0.137,0,0.137,False,0,recording_not_in_predictions,,False
+352,RBS47_20230702_150000,Red-billed Firefinch,0.139,0,0.139,True,0,no_matching_confidence,,False
+353,RBS52_20230703_100002,Red-billed Firefinch,0.141,0,0.141,False,0,recording_not_in_predictions,,False
+354,RBS79_20230630_070002,Red-billed Firefinch,0.141,0,0.141,False,0,recording_not_in_predictions,,False
+355,RBS55_20230701_100002,Red-billed Firefinch,0.142,0,0.142,False,0,recording_not_in_predictions,,False
+356,RBS75_20230708_070002,Red-billed Firefinch,0.145,0,0.145,False,0,recording_not_in_predictions,,False
+357,RBS45_20230626_070003,Red-billed Firefinch,0.146,0,0.146,False,0,recording_not_in_predictions,,False
+358,RBS55_20230705_080002,Red-billed Firefinch,0.146,0,0.146,False,0,recording_not_in_predictions,,False
+359,RBS75_20230628_110002,Red-billed Firefinch,0.147,0,0.147,False,0,recording_not_in_predictions,,False
+360,RBS75_20230707_080002,Red-billed Firefinch,0.148,0,0.148,False,0,recording_not_in_predictions,,False
+361,RBS75_20230703_180000,Red-billed Firefinch,0.154,0,0.154,True,1,unique,1.0,False
+362,RBS40_20230702_050002,Red-billed Firefinch,0.155,0,0.155,False,0,recording_not_in_predictions,,False
+363,RBS63_20230630_070002,Red-billed Firefinch,0.157,0,0.157,False,0,recording_not_in_predictions,,False
+364,RBS70_20230623_070002,Red-billed Firefinch,0.157,0,0.157,False,0,recording_not_in_predictions,,False
+365,RBS30_20230627_070002,Red-billed Firefinch,0.158,0,0.158,False,0,recording_not_in_predictions,,False
+366,RBS17_20230702_060002,Red-billed Firefinch,0.167,0,0.167,False,0,recording_not_in_predictions,,False
+367,RBS75_20230703_160000,Red-billed Firefinch,0.167,0,0.167,True,1,unique,1.0,False
+368,RBS45_20230623_070003,Red-billed Firefinch,0.168,0,0.168,False,0,recording_not_in_predictions,,False
+369,RBS75_20230628_150000,Red-billed Firefinch,0.171,0,0.171,True,1,unique,2.0,False
+370,RBS22_20230630_160000,Red-billed Firefinch,0.171,0,0.171,True,0,no_matching_confidence,,False
+371,RBS75_20230629_090002,Red-billed Firefinch,0.172,0,0.172,False,0,recording_not_in_predictions,,False
+372,RBS55_20230702_090002,Red-billed Firefinch,0.174,0,0.174,False,0,recording_not_in_predictions,,False
+373,RBS63_20230701_070002,Red-billed Firefinch,0.175,0,0.175,False,0,recording_not_in_predictions,,False
+374,RBS79_20230705_150000,Red-billed Firefinch,0.175,0,0.175,True,1,unique,1.0,False
+375,RBS56_20230627_070002,Red-billed Firefinch,0.178,0,0.178,False,0,recording_not_in_predictions,,False
+376,RBS70_20230623_070002,Red-billed Firefinch,0.185,0,0.185,False,0,recording_not_in_predictions,,False
+377,RBS57_20230628_070003,Red-billed Firefinch,0.19,0,0.19,False,0,recording_not_in_predictions,,False
+378,RBS75_20230628_090002,Red-billed Firefinch,0.206,0,0.206,False,0,recording_not_in_predictions,,False
+379,RBS44_20230623_060002,Red-billed Firefinch,0.217,0,0.217,False,0,recording_not_in_predictions,,False
+380,RBS75_20230701_150000,Red-billed Firefinch,0.218,0,0.218,True,1,unique,1.0,False
+381,RBS75_20230707_150000,Red-billed Firefinch,0.221,0,0.221,True,1,unique,9.0,False
+382,RBS38_20230630_160000,Red-billed Firefinch,0.232,0,0.232,True,1,unique,47.0,False
+383,RBS57_20230628_070003,Red-billed Firefinch,0.244,0,0.244,False,0,recording_not_in_predictions,,False
+384,RBS55_20230701_160000,Red-billed Firefinch,0.247,0,0.247,True,1,unique,1.0,False
+385,RBS30_20230705_080002,Red-billed Firefinch,0.251,0,0.251,False,0,recording_not_in_predictions,,False
+386,RBS30_20230705_170000,Red-billed Firefinch,0.274,0,0.274,True,1,unique,1.0,False
+387,RBS47_20230710_070002,Red-billed Firefinch,0.283,0,0.283,False,0,recording_not_in_predictions,,False
+388,RBS75_20230701_070002,Red-billed Firefinch,0.284,0,0.284,False,0,recording_not_in_predictions,,False
+389,RBS75_20230627_170000,Red-billed Firefinch,0.291,0,0.291,True,0,no_matching_confidence,,False
+390,RBS17_20230703_170000,Red-billed Firefinch,0.299,0,0.299,True,1,unique,1.0,False
+391,RBS47_20230702_150000,Red-billed Firefinch,0.307,0,0.307,True,0,no_matching_confidence,,False
+392,RBS17_20230703_160000,Red-billed Firefinch,0.316,0,0.316,True,1,unique,1.0,False
+393,RBS30_20230629_080002,Red-billed Firefinch,0.324,0,0.324,False,0,recording_not_in_predictions,,False
+394,RBS35_20230623_070002,Red-billed Firefinch,0.326,0,0.326,False,0,recording_not_in_predictions,,False
+395,RBS56_20230626_060002,Red-billed Firefinch,0.341,0,0.341,False,0,recording_not_in_predictions,,False
+396,RBS40_20230712_030001,Red-billed Firefinch,0.383,0,0.383,False,0,recording_not_in_predictions,,False
+397,RBS45_20230705_070003,Red-billed Firefinch,0.471,0,0.471,False,0,recording_not_in_predictions,,False
+398,RBS63_20230630_080002,Red-billed Firefinch,0.533,0,0.533,False,0,recording_not_in_predictions,,False
+399,RBS63_20230708_090002,Red-billed Firefinch,0.558,0,0.558,False,0,recording_not_in_predictions,,False
+400,RBS57_20230628_070003,Red-billed Firefinch,0.907,1,0.907,False,0,recording_not_in_predictions,,False
+401,RBS75_20230704_000000,Three-banded Plover,0.102,1,0.102,True,1,unique,18.0,False
+402,RBS75_20230708_090002,Three-banded Plover,0.106,1,0.106,False,0,recording_not_in_predictions,,False
+403,RBS75_20230704_030002,Three-banded Plover,0.108,1,0.108,False,0,recording_not_in_predictions,,False
+404,RBS75_20230706_080002,Three-banded Plover,0.109,1,0.109,False,0,recording_not_in_predictions,,False
+405,RBS49_20230704_060002,Three-banded Plover,0.109,1,0.109,False,0,recording_not_in_predictions,,False
+406,RBS75_20230629_090002,Three-banded Plover,0.111,1,0.111,False,0,recording_not_in_predictions,,False
+407,RBS75_20230701_150000,Three-banded Plover,0.112,1,0.112,True,1,unique,38.0,False
+408,RBS75_20230701_000000,Three-banded Plover,0.115,1,0.115,True,1,unique,7.0,False
+409,RBS75_20230629_110002,Three-banded Plover,0.116,1,0.116,False,0,recording_not_in_predictions,,False
+410,RBS15_20230628_060002,Three-banded Plover,0.124,1,0.124,False,0,recording_not_in_predictions,,False
+411,RBS75_20230701_000000,Three-banded Plover,0.127,1,0.127,True,1,unique,10.0,False
+412,RBS75_20230628_210000,Three-banded Plover,0.129,1,0.129,True,0,no_matching_confidence,,False
+413,RBS75_20230701_180000,Three-banded Plover,0.13,1,0.13,True,1,unique,13.0,False
+414,RBS75_20230628_180000,Three-banded Plover,0.132,1,0.132,True,1,unique,2.0,False
+415,RBS75_20230707_100002,Three-banded Plover,0.135,1,0.135,False,0,recording_not_in_predictions,,False
+416,RBS50_20230710_060003,Three-banded Plover,0.136,1,0.136,False,0,recording_not_in_predictions,,False
+417,RBS75_20230630_120002,Three-banded Plover,0.141,1,0.141,False,0,recording_not_in_predictions,,False
+418,RBS75_20230629_150000,Three-banded Plover,0.144,1,0.144,True,1,unique,6.0,False
+419,RBS75_20230702_080002,Three-banded Plover,0.146,1,0.146,False,0,recording_not_in_predictions,,False
+420,RBS58_20230707_100002,Three-banded Plover,0.147,1,0.147,False,0,recording_not_in_predictions,,False
+421,RBS75_20230704_100002,Three-banded Plover,0.154,1,0.154,False,0,recording_not_in_predictions,,False
+422,RBS75_20230702_110002,Three-banded Plover,0.155,1,0.155,False,0,recording_not_in_predictions,,False
+423,RBS75_20230704_100002,Three-banded Plover,0.157,1,0.157,False,0,recording_not_in_predictions,,False
+424,RBS75_20230701_220000,Three-banded Plover,0.158,1,0.158,True,1,unique,3.0,False
+425,RBS75_20230702_000000,Three-banded Plover,0.162,1,0.162,True,1,unique,4.0,False
+426,RBS40_20230701_190000,Three-banded Plover,0.164,1,0.164,True,1,unique,1.0,False
+427,RBS51_20230703_090002,Three-banded Plover,0.164,1,0.164,False,0,recording_not_in_predictions,,False
+428,RBS75_20230702_080002,Three-banded Plover,0.167,1,0.167,False,0,recording_not_in_predictions,,False
+429,RBS75_20230703_010000,Three-banded Plover,0.167,1,0.167,True,1,unique,7.0,False
+430,RBS75_20230704_100002,Three-banded Plover,0.171,1,0.171,False,0,recording_not_in_predictions,,False
+431,RBS75_20230703_010000,Three-banded Plover,0.171,1,0.171,True,1,unique,5.0,False
+432,RBS75_20230701_180000,Three-banded Plover,0.173,1,0.173,True,1,unique,12.0,False
+433,RBS75_20230701_160000,Three-banded Plover,0.176,1,0.176,True,1,unique,17.0,False
+434,RBS75_20230702_130002,Three-banded Plover,0.18,1,0.18,False,0,recording_not_in_predictions,,False
+435,RBS75_20230702_080002,Three-banded Plover,0.181,1,0.181,False,0,recording_not_in_predictions,,False
+436,RBS75_20230704_080002,Three-banded Plover,0.184,1,0.184,False,0,recording_not_in_predictions,,False
+437,RBS75_20230628_100002,Three-banded Plover,0.193,1,0.193,False,0,recording_not_in_predictions,,False
+438,RBS75_20230629_120002,Three-banded Plover,0.194,1,0.194,False,0,recording_not_in_predictions,,False
+439,RBS75_20230707_230000,Three-banded Plover,0.196,1,0.196,True,1,unique,1.0,False
+440,RBS75_20230703_020000,Three-banded Plover,0.206,1,0.206,True,1,unique,8.0,False
+441,RBS02_20230705_170000,Three-banded Plover,0.207,1,0.207,True,1,unique,1.0,False
+442,RBS51_20230705_070002,Three-banded Plover,0.207,1,0.207,False,0,recording_not_in_predictions,,False
+443,RBS75_20230701_130002,Three-banded Plover,0.217,1,0.217,False,0,recording_not_in_predictions,,False
+444,RBS75_20230702_110002,Three-banded Plover,0.223,1,0.223,False,0,recording_not_in_predictions,,False
+445,RBS75_20230701_130002,Three-banded Plover,0.223,1,0.223,False,0,recording_not_in_predictions,,False
+446,RBS75_20230702_070002,Three-banded Plover,0.225,1,0.225,False,0,recording_not_in_predictions,,False
+447,RBS75_20230707_100002,Three-banded Plover,0.236,1,0.236,False,0,recording_not_in_predictions,,False
+448,RBS75_20230701_150000,Three-banded Plover,0.248,1,0.248,True,1,unique,60.0,False
+449,RBS75_20230703_020000,Three-banded Plover,0.248,1,0.248,True,1,unique,5.0,False
+450,RBS75_20230630_080002,Three-banded Plover,0.257,1,0.257,False,0,recording_not_in_predictions,,False
+451,RBS75_20230630_060002,Three-banded Plover,0.286,1,0.286,False,0,recording_not_in_predictions,,False
+452,RBS75_20230703_020000,Three-banded Plover,0.293,1,0.293,True,1,unique,12.0,False
+453,RBS75_20230701_010000,Three-banded Plover,0.3,1,0.3,True,1,unique,2.0,False
+454,RBS75_20230701_210000,Three-banded Plover,0.304,1,0.304,True,1,unique,6.0,False
+455,RBS75_20230628_090002,Three-banded Plover,0.313,1,0.313,False,0,recording_not_in_predictions,,False
+456,RBS75_20230628_150000,Three-banded Plover,0.318,1,0.318,True,1,unique,8.0,False
+457,RBS75_20230629_110002,Three-banded Plover,0.329,1,0.329,False,0,recording_not_in_predictions,,False
+458,RBS75_20230706_180000,Three-banded Plover,0.34,1,0.34,True,1,unique,1.0,False
+459,RBS75_20230629_110002,Three-banded Plover,0.364,1,0.364,False,0,recording_not_in_predictions,,False
+460,RBS75_20230630_180000,Three-banded Plover,0.365,1,0.365,True,1,unique,1.0,False
+461,RBS75_20230703_090002,Three-banded Plover,0.406,1,0.406,False,0,recording_not_in_predictions,,False
+462,RBS75_20230701_160000,Three-banded Plover,0.413,1,0.413,True,1,unique,7.0,False
+463,RBS75_20230628_080002,Three-banded Plover,0.446,1,0.446,False,0,recording_not_in_predictions,,False
+464,RBS75_20230628_090002,Three-banded Plover,0.471,1,0.471,False,0,recording_not_in_predictions,,False
+465,RBS75_20230630_160000,Three-banded Plover,0.474,1,0.474,True,1,unique,4.0,False
+466,RBS75_20230703_020000,Three-banded Plover,0.475,1,0.475,True,1,unique,7.0,False
+467,RBS75_20230701_120002,Three-banded Plover,0.479,1,0.479,False,0,recording_not_in_predictions,,False
+468,RBS75_20230701_120002,Three-banded Plover,0.504,1,0.504,False,0,recording_not_in_predictions,,False
+469,RBS75_20230628_120002,Three-banded Plover,0.505,1,0.505,False,0,recording_not_in_predictions,,False
+470,RBS75_20230704_060002,Three-banded Plover,0.525,1,0.525,False,0,recording_not_in_predictions,,False
+471,RBS75_20230701_100002,Three-banded Plover,0.555,1,0.555,False,0,recording_not_in_predictions,,False
+472,RBS75_20230630_080002,Three-banded Plover,0.556,1,0.556,False,0,recording_not_in_predictions,,False
+473,RBS75_20230702_010000,Three-banded Plover,0.568,1,0.568,True,1,unique,1.0,False
+474,RBS75_20230630_070002,Three-banded Plover,0.571,1,0.571,False,0,recording_not_in_predictions,,False
+475,RBS75_20230703_010000,Three-banded Plover,0.591,1,0.591,True,0,no_matching_confidence,,False
+476,RBS75_20230628_120002,Three-banded Plover,0.635,1,0.635,False,0,recording_not_in_predictions,,False
+477,RBS75_20230703_010000,Three-banded Plover,0.686,1,0.686,True,1,unique,8.0,False
+478,RBS75_20230703_090002,Three-banded Plover,0.698,1,0.698,False,0,recording_not_in_predictions,,False
+479,RBS75_20230702_160000,Three-banded Plover,0.7,1,0.7,True,1,unique,4.0,False
+480,RBS75_20230628_150000,Three-banded Plover,0.748,1,0.748,True,1,unique,12.0,False
+481,RBS75_20230628_150000,Three-banded Plover,0.77,1,0.77,True,1,unique,14.0,False
+482,RBS75_20230705_020000,Three-banded Plover,0.773,1,0.773,True,1,unique,2.0,False
+483,RBS49_20230705_180020,Three-banded Plover,0.793,1,0.793,False,0,recording_not_in_predictions,,False
+484,RBS75_20230629_090002,Three-banded Plover,0.795,1,0.795,False,0,recording_not_in_predictions,,False
+485,RBS75_20230703_090002,Three-banded Plover,0.797,1,0.797,False,0,recording_not_in_predictions,,False
+486,RBS75_20230629_150000,Three-banded Plover,0.813,1,0.813,True,1,unique,8.0,False
+487,RBS75_20230629_110002,Three-banded Plover,0.816,1,0.816,False,0,recording_not_in_predictions,,False
+488,RBS75_20230630_130002,Three-banded Plover,0.82,1,0.82,False,0,recording_not_in_predictions,,False
+489,RBS75_20230705_060002,Three-banded Plover,0.843,1,0.843,False,0,recording_not_in_predictions,,False
+490,RBS75_20230629_090002,Three-banded Plover,0.857,1,0.857,False,0,recording_not_in_predictions,,False
+491,RBS75_20230706_080002,Three-banded Plover,0.873,1,0.873,False,0,recording_not_in_predictions,,False
+492,RBS75_20230627_160000,Three-banded Plover,0.875,1,0.875,True,1,unique,19.0,False
+493,RBS75_20230702_080002,Three-banded Plover,0.884,1,0.884,False,0,recording_not_in_predictions,,False
+494,RBS75_20230630_230000,Three-banded Plover,0.885,1,0.885,True,1,unique,4.0,False
+495,RBS75_20230628_160000,Three-banded Plover,0.899,1,0.899,True,1,unique,10.0,False
+496,RBS75_20230629_160000,Three-banded Plover,0.95,1,0.95,True,1,unique,5.0,False
+497,RBS75_20230701_110002,Three-banded Plover,0.957,1,0.957,False,0,recording_not_in_predictions,,False
+498,RBS75_20230628_090002,Three-banded Plover,0.982,1,0.982,False,0,recording_not_in_predictions,,False
+499,RBS75_20230701_150000,Three-banded Plover,0.988,1,0.988,True,1,unique,24.0,False
+500,RBS64_20230629_060003,Three-banded Plover,0.264,0,0.264,False,0,recording_not_in_predictions,,False
+501,RBS75_20230627_160000,Three-banded Plover,0.851,1,0.851,True,1,unique,4.0,False
+502,RBS75_20230628_160000,Three-banded Plover,0.865,1,0.865,True,1,unique,6.0,False
+503,RBS75_20230701_110002,Three-banded Plover,0.868,1,0.868,False,0,recording_not_in_predictions,,False
+504,RBS75_20230704_100002,Three-banded Plover,0.869,1,0.869,False,0,recording_not_in_predictions,,False
+505,RBS75_20230704_080002,Three-banded Plover,0.882,1,0.882,False,0,recording_not_in_predictions,,False
+506,RBS75_20230628_090002,Three-banded Plover,0.882,1,0.882,False,0,recording_not_in_predictions,,False
+507,RBS75_20230702_080002,Three-banded Plover,0.884,1,0.884,False,0,recording_not_in_predictions,,False
+508,RBS75_20230630_230000,Three-banded Plover,0.885,1,0.885,True,1,unique,4.0,True
+509,RBS75_20230628_220000,Three-banded Plover,0.886,1,0.886,True,1,unique,1.0,False
+510,RBS75_20230630_100002,Three-banded Plover,0.888,1,0.888,False,0,recording_not_in_predictions,,False
+511,RBS75_20230701_120002,Three-banded Plover,0.897,1,0.897,False,0,recording_not_in_predictions,,False
+512,RBS75_20230628_160000,Three-banded Plover,0.899,1,0.899,True,1,unique,10.0,True
+513,RBS75_20230702_080002,Three-banded Plover,0.9,1,0.9,False,0,recording_not_in_predictions,,False
+514,RBS75_20230628_100002,Three-banded Plover,0.903,1,0.903,False,0,recording_not_in_predictions,,False
+515,RBS75_20230702_080002,Three-banded Plover,0.906,1,0.906,False,0,recording_not_in_predictions,,False
+516,RBS75_20230701_150000,Three-banded Plover,0.908,1,0.908,True,2,ambiguous,,False
+517,RBS75_20230701_150000,Three-banded Plover,0.909,1,0.909,True,1,unique,59.0,False
+518,RBS75_20230705_080002,Three-banded Plover,0.914,1,0.914,False,0,recording_not_in_predictions,,False
+519,RBS75_20230702_080002,Three-banded Plover,0.917,1,0.917,False,0,recording_not_in_predictions,,False
+520,RBS75_20230705_000000,Three-banded Plover,0.918,1,0.918,True,1,unique,17.0,False
+521,RBS75_20230704_100002,Three-banded Plover,0.92,1,0.92,False,0,recording_not_in_predictions,,False
+522,RBS75_20230704_100002,Three-banded Plover,0.923,1,0.923,False,0,recording_not_in_predictions,,False
+523,RBS75_20230701_150000,Three-banded Plover,0.932,1,0.932,True,1,unique,14.0,False
+524,RBS75_20230705_000000,Three-banded Plover,0.934,1,0.934,True,1,unique,22.0,False
+525,RBS75_20230702_150000,Three-banded Plover,0.946,1,0.946,True,1,unique,2.0,False
+526,RBS75_20230702_080002,Three-banded Plover,0.947,1,0.947,False,0,recording_not_in_predictions,,False
+527,RBS75_20230627_114553,Three-banded Plover,0.95,1,0.95,False,0,recording_not_in_predictions,,False
+528,RBS75_20230628_090002,Three-banded Plover,0.952,1,0.952,False,0,recording_not_in_predictions,,False
+529,RBS75_20230628_090002,Three-banded Plover,0.954,1,0.954,False,0,recording_not_in_predictions,,False
+530,RBS75_20230701_110002,Three-banded Plover,0.957,1,0.957,False,0,recording_not_in_predictions,,False
+531,RBS75_20230701_150000,Three-banded Plover,0.958,1,0.958,True,1,unique,17.0,False
+532,RBS75_20230627_160000,Three-banded Plover,0.958,1,0.958,True,1,unique,23.0,False
+533,RBS75_20230701_100002,Three-banded Plover,0.962,1,0.962,False,0,recording_not_in_predictions,,False
+534,RBS75_20230702_080002,Three-banded Plover,0.963,1,0.963,False,0,recording_not_in_predictions,,False
+535,RBS75_20230702_080002,Three-banded Plover,0.963,1,0.963,False,0,recording_not_in_predictions,,False
+536,RBS75_20230703_090002,Three-banded Plover,0.966,1,0.966,False,0,recording_not_in_predictions,,False
+537,RBS75_20230702_160000,Three-banded Plover,0.967,1,0.967,True,1,unique,5.0,False
+538,RBS75_20230628_150000,Three-banded Plover,0.968,1,0.968,True,1,unique,18.0,False
+539,RBS75_20230702_080002,Three-banded Plover,0.975,1,0.975,False,0,recording_not_in_predictions,,False
+540,RBS75_20230701_180000,Three-banded Plover,0.976,1,0.976,True,1,unique,5.0,False
+541,RBS75_20230628_160000,Three-banded Plover,0.976,1,0.976,True,1,unique,7.0,False
+542,RBS75_20230702_160000,Three-banded Plover,0.979,1,0.979,True,0,no_matching_confidence,,False
+543,RBS75_20230629_070002,Three-banded Plover,0.985,1,0.985,False,0,recording_not_in_predictions,,False
+544,RBS75_20230628_090002,Three-banded Plover,0.986,1,0.986,False,0,recording_not_in_predictions,,False
+545,RBS75_20230701_100002,Three-banded Plover,0.986,1,0.986,False,0,recording_not_in_predictions,,False
+546,RBS75_20230702_080002,Three-banded Plover,0.989,1,0.989,False,0,recording_not_in_predictions,,False
+547,RBS75_20230701_000000,Three-banded Plover,0.991,1,0.991,True,1,unique,9.0,False
+548,RBS75_20230707_110002,Three-banded Plover,0.991,1,0.991,False,0,recording_not_in_predictions,,False
+549,RBS75_20230628_160000,Three-banded Plover,0.994,1,0.994,True,1,unique,5.0,False
+550,RBS75_20230704_070002,Three-banded Plover,0.994,1,0.994,False,0,recording_not_in_predictions,,False
