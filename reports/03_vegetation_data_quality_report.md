@@ -1,13 +1,18 @@
 # Herbaceous vegetation: data quality report
 
-**Project:** Savanna Monitoring Pilot, area Lewa (LW), baseline 2026
+**Project:** Savanna Monitoring Pilot, area Lewa (LW), baseline 2026 
 **Surveys:** 19 May 2026 to 27 May 2026, 32 submissions by 2 recorders (Grace and Sam)
 
-This report answers vegetation question 1 of the brief: a data quality report with (a) a survey level summary, (b) a plot level summary, (c) an assessment of sampling effort and (d) a map of transect locations.
+This document aims to give a data quality report with the following parameters:
+a. a survey level summary
+b. a plot level summary
+c. an assessment of sampling effort
+d. a map of transect locations.
 
-**No data were changed.** As the brief asks, every problem is **flagged, not fixed**. The numbers and tables in this report are produced by the code (the module `vegetation.report`), so they always match the data.
+**No data were changed.** Every problem is **flagged, not fixed**. The numbers and tables in this report are produced by the code (the module `vegetation.report`), so they match the data.
 
-The handoff for the Tech team is in [`04_vegetation_tech_handoff.md`](04_vegetation_tech_handoff.md). The analysis is in [`notebooks/02_vegetation_qaqc.ipynb`](../notebooks/02_vegetation_qaqc.ipynb).
+- The handoff for the Tech team is in [`04_vegetation_tech_handoff.md`](04_vegetation_tech_handoff.md).
+- The analysis is in [`notebooks/02_vegetation_qaqc.ipynb`](../notebooks/02_vegetation_qaqc.ipynb).
 
 
 ## Main findings
@@ -60,12 +65,7 @@ In total there are **809 flags**. The status of a survey or plot is **Error** if
 
 The summaries use all surveys that were **not rejected** in review. 2 submissions were rejected; both are second surveys of a plot that was surveyed twice on the same day. Each placeholder morphospecies counts as one taxon. Later identifications are shown next to the data, not applied.
 
-### A note on species names
-
-The SOP asks for typed names as `Genus_species`, with an underscore. In the exported data the names use a space (`Genus species`), the same as the species list. The checks compare names in this stored form.
-
-
-## a. Survey level summary
+## Survey level summary
 
 Status of the surveys in the analysis set: **OK 1, Warning 21, Error 8**. The table also shows the 2 rejected submissions.
 
@@ -141,7 +141,7 @@ All errors are listed below. Most are quadrats where the form says "additional s
 3. **Names:** typed names that are not in the canonical form (R05), the same name under several placeholders (R08), and identifications that say a record is a duplicate or should be excluded (R10).
 
 
-## b. Plot level summary
+## Plot level summary
 
 The table shows the 31 registered plots. Diversity uses the accepted survey of each plot.
 
@@ -195,7 +195,7 @@ Notes:
 4. Richness goes from 8 to 35 taxa, with a mean of 21.7.
 
 
-## c. Assessment of sampling effort
+## Assessment of sampling effort
 
 ### Design coverage
 
@@ -245,7 +245,7 @@ All primary savanna locations except one (not viable) were registered and survey
 3. **Chao2:** in 10 plots the Chao2 estimate is more than 1.5 times the observed richness.
 4. **Across plots:** 130 taxa were observed and Chao2 estimates 182. 49 taxa were found in only one plot.
 
-**Conclusion:** 20 quadrats give a fair but incomplete picture of each plot. The data support comparisons of frequent species between plots. Richness of single plots should be reported with its coverage, or compared at the same coverage.
+20 quadrats give a fair but incomplete picture of each plot. The data support comparisons of frequent species between plots. Richness of single plots should be reported with its coverage, or compared at the same coverage.
 
 ### Identification quality
 

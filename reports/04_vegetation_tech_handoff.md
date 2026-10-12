@@ -2,16 +2,17 @@
 
 **Handoff for the Tech team, NS Analytics platform**
 
-This document answers vegetation question 2 of the brief: what the Tech team needs so that the cleaning, joining and QA/QC run automatically and feed a Vegetation QA/QC dashboard. The ODK data already reach the platform. Everything here starts after the raw tables arrive.
+This document aims to answer what the Tech team needs so that the cleaning, joining and QA/QC run automatically and feed a Vegetation QA/QC dashboard. 
 
-The Python code in `src/vegetation/` is the reference implementation. The results it produces are in [`03_vegetation_data_quality_report.md`](03_vegetation_data_quality_report.md).
+- The Python code in `src/vegetation/` is the reference implementation.
+- The results it produces are in [`03_vegetation_data_quality_report.md`](03_vegetation_data_quality_report.md).
 
 
 ## 1. Summary
 
-1. **Never change raw data.** The raw ODK tables are stored as they arrive. Cleaning makes new tables; it does not edit the raw ones.
+1. **Never change raw data.** The raw ODK tables are stored as they arrive. Cleaning makes new tables. It does not edit the raw ones.
 2. **Clean and join** into four tables: plots, surveys, quadrats and species records.
-3. **Run checks.** Each check is a small rule with a stable id (for example `Q04`). All checks and their limits are listed in one config file.
+3. **Run checks.** Each check is a small rule with a stable id. All checks and their limits are listed in one config file.
 4. **Save flags.** Every problem becomes one row in a `qa_flags` table. Flags are never used to change data.
 5. **Let people review.** A reviewer can accept or dismiss each flag. The decision stays attached to the flag in later runs.
 6. **Build summary tables** for the dashboard: surveys, plots, sampling effort and names.
@@ -123,7 +124,7 @@ Analysis set: all surveys not rejected in review. Each placeholder morphospecies
 
 ## 4. Tables in PostgreSQL
 
-The names below are a proposal. The Tech team can adapt them.
+The names below are a proposal only.
 
 ### 4.1 Check registry
 
@@ -196,7 +197,7 @@ CREATE TABLE qa_runs (
 
 ### 4.5 Example checks in SQL
 
-Survey rejected in review (S01):
+Survey rejected in review:
 
 ```sql
 SELECT 'S01' AS check_id, s.survey_key AS entity_key, s.plot_name,
@@ -205,7 +206,7 @@ FROM clean_surveys s
 WHERE s.review_state = 'rejected';
 ```
 
-Survey without 20 quadrats (S03):
+Survey without 20 quadrats:
 
 ```sql
 SELECT 'S03' AS check_id, s.survey_key AS entity_key, s.plot_name,
@@ -217,7 +218,7 @@ GROUP BY s.survey_key, s.plot_name, s.quadrat_repeat_count
 HAVING COUNT(q.quadrat_key) <> 20 OR s.quadrat_repeat_count <> 20;
 ```
 
-Form summary differs from the records (S13):
+Form summary differs from the records:
 
 ```sql
 WITH computed AS (
@@ -297,57 +298,7 @@ A table of all flags with filters. Each row has buttons to **accept** or **dismi
 2. Typed names with problems: not canonical, already on the list, possible misspelling, same name under several placeholders.
 3. Most frequent taxa that are not on the species list. These are the first to add to the list.
 
-
-## 7. For the Biometrics team (R)
-
-The richness statistics have standard R versions. The `iNEXT` package computes sample based rarefaction, sample coverage and the Chao2 estimate from incidence data (`datatype = "incidence_raw"`). The results should match `src/vegetation/summaries.py`.
-
-
-## 8. How to test the port
-
-Run the platform version on the files of this dataset. It should give:
-
-1. 809 flags, with the same `check_id` and `entity_key` as `outputs/vegetation/qa_flags.csv`.
-2. The same survey and plot status as `outputs/vegetation/survey_summary.csv` and `plot_summary.csv`.
-3. No change to any raw table (the reference tests check this with file hashes).
-
-The tests in `tests/test_vegetation.py` cover the joins, the check registry, known problems in this dataset, the richness formulas and the report.
-
-
-## 9. Suggested work items
-
-These can become Jira tickets:
-
-1. Store the raw ODK tables and entity lists for each project without changes.
-2. Create the tables `qa_checks`, `qa_flags`, `qa_flag_reviews` and `qa_runs` in PostgreSQL.
-3. Port the cleaning, joining and geometry steps into a worker service.
-4. Port the checks, reading limits from the config.
-5. Build the summary tables.
-6. Start a run from the Redis queue on new submissions and review changes.
-7. Dashboard pages 1 to 6, starting with the Flags page.
-8. Add the reference tests to CI.
-
-
-## 10. Recommendations for the field method and the form
-
-These come from the data quality report. They are for the project and the form designers, not for the pipeline.
-
-1. **Register the shrubland stratum** before the next survey, or change the design.
-2. **Check the transect direction with the field team.** All transects run east to west.
-3. **Save the form summary correctly.** "Quadrats with species" is wrong in 23 submissions; the platform should always compute it from the records.
-4. **Update the species list.** Add frequent species that were typed by hand, and identify the placeholders.
-5. **Make the form check the transect length**, and warn when the midpoint is more than 25 m from the centroid.
-
-
-## 11. Open questions
-
-1. Who reviews flags: the project team, the Natural State data team, or both?
-2. Should an error block the survey from all dashboards and analyses until it is reviewed?
-3. Should later identifications (`species_extra_ids`) be applied automatically once a person approves them?
-4. Are the limits in the config (for example 20 degrees from north/south) right for every project, or should each project have its own?
-
-
-## 12. Files
+## 7. Files
 
 <table>
 <tr><th>Path</th><th>Content</th></tr>
