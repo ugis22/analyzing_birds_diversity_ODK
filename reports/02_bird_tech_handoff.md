@@ -2,9 +2,9 @@
 
 **Handoff for the Tech team, NS Analytics platform**
 
-This document explains how we turn BirdNET predictions into observations, which decisions we made, and what the platform needs so the method runs automatically after each upload. The ML pipeline (SD card upload to BirdNET predictions) already works. Everything here starts after the predictions are saved.
+This document explains how we turn BirdNET predictions into observations, which decisions we made, and what the platform needs so the method runs automatically after each upload.
 
-The Python code in `src/birds/` is the reference implementation. If this document and the code disagree, the code is correct, and we will fix the document.
+The Python code in `src/birds/` is the reference implementation.
 
 The full results, with more detail on each decision, are in [`01_bird_observations.md`](01_bird_observations.md).
 
@@ -114,7 +114,7 @@ For each threshold we also report:
 ## 4. Decisions and reasons
 
 1. **Firth logistic regression for every species.** The plain GLM has no solution when all validated clips are correct (Oriole). It is also too confident when there is only one error (Plover). Firth adds a small correction that always gives a solution. When the data are good, it gives almost the same result as the GLM (Nightjar). One method for all species means no special cases in the platform.
-2. **Target of 0.99.** This is the Natural State definition of an observation: we are 99% sure the prediction is correct, according to the fitted curve.
+2. **Target of 0.99.** We are 99% sure the prediction is correct, according to the fitted curve.
 3. **No extrapolation.** The threshold must be inside the validated score range. For Firefinch the curve reaches 0.99 only at a score of 0.999, but the highest validated score is 0.907. We do not trust the curve there, so Firefinch has no threshold.
 4. **Flat curve.** For Oriole all 150 clips are correct, so the curve is flat and above 0.99. We set the threshold to the lowest validated score (0.104) and flag it.
 5. **Human answers win.** A checked clip uses the ornithologist answer, not the threshold. We only use links that are certain.
@@ -404,44 +404,7 @@ The reference outputs are in `outputs/birds/`. To produce them again, install th
 
 We ran the reference code on Python 3.13, the platform version. It gives the same thresholds and the same `observation_status` for every row. Note: the reference code finds the data through the repository folders, so it must be installed in editable mode. On the platform this does not matter, because the data come from PostgreSQL.
 
-
-## 7. For the Biometrics team (R)
-
-The Biometrics team works in R. The same model and threshold in R:
-
-```r
-library(logistf)
-
-fit = logistf(outcome ~ qlogis(score), data = validations)
-coef(fit)
-```
-
-`qlogis` is the logit. The threshold is the score `s` where `b0 + b1 × qlogis(s)` equals `qlogis(0.99)`. This gives the crossing point only. The reference code also limits the threshold to the checked score range (section 3, step 3).
-
-
-## 8. Suggested work items
-
-These can become Jira tickets:
-
-1. Add `prediction_id` to the clips sent to ornithologists, and save it with each answer.
-2. Create the tables `validations`, `species_thresholds` and `observations` in PostgreSQL.
-3. Port the reference code into a worker service, and add the tests in section 6.11.
-4. Job A: label new predictions when a batch is saved.
-5. Job B: create validation samples for species without enough checks.
-6. Job C and Job D: refit thresholds, save new versions, label again after approval.
-7. Approval page for new thresholds.
-8. Monitoring dashboard (section 6.10).
-
-
-## 9. Open questions
-
-1. Should thresholds be shared across projects in the same region, or always fitted for each project?
-2. Who approves a new threshold: the Biometrics team or the project lead?
-3. Should users also see predictions below the threshold (marked as not confirmed), or only observations?
-4. How many validations can the ornithologists do for each new project? This sets the size of the sample in Job B.
-
-
-## 10. Files
+## 7. Files
 
 <table>
 <tr><th>Path</th><th>Content</th></tr>

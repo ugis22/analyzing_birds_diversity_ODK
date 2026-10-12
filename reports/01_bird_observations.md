@@ -1,4 +1,5 @@
-# Birds, question 1: an observation label for every BirdNET prediction
+# Birds Challenge
+## Question 1: Find an observation label for every BirdNET prediction
 
 **Question.** Using a 99% probability of correctness cutoff, assign each clip in `birdnet_predictions` a label in a new `observation` field.
 
@@ -22,10 +23,10 @@ How to build it for the platform is in the second report: [`02_bird_tech_handoff
 
 Short names: Nightjar (*Caprimulgus poliocephalus*), Oriole (*Oriolus larvatus*), Firefinch (*Lagonosticta senegala*), Plover (*Charadrius tricollaris*).
 
-In the words of the brief: when BirdNET predicts Nightjar with a score of 0.709 or more, we can be 99% sure that the prediction is correct. For Plover the score is 0.833.
+When BirdNET predicts Nightjar with a score of 0.709 or more, we can be 99% sure that the prediction is correct. For Plover the score is 0.833.
 
 
-## 2. The data
+## 2. Data
 
 1. **Predictions:** 29,491 rows from 1,696 recordings, 43 recorders, 20 June to 12 July 2023. Each row is one 3 second segment with a species and a score. The lowest score in the file is 0.100, which is the minimum score set when BirdNET was run.
 2. **Validations:** 551 clips checked by ornithologists. Each has the species, the score, and the answer: 1 correct, 0 incorrect.
@@ -35,9 +36,9 @@ The checked clips are not a random sample of the predictions. About 30% have a s
 
 ## 3. Method
 
-We follow the approach in the brief (Wood and Kahl 2024): plot the logit of the score on the x axis and the probability that the prediction is correct on the y axis, fit a curve, and read the threshold from the curve.
+The approach in the publication Wood and Kahl 2024 was followed. The plot the logit of the score on the x axis and the probability that the prediction is correct on the y axis, fit a curve, and read the threshold from the curve.
 
-### Step 1. Link checked clips to predictions
+### Link checked clips to predictions
 
 A checked clip has a file name like `0.148_4_RBS55_20230628_060002.wav`: the score with 3 decimals, an export number, and the recording. There is no prediction id.
 
@@ -53,7 +54,7 @@ We link a clip to a prediction only when exactly **one** prediction of that spec
 
 All clips are used to fit the curve, because the curve only needs the score and the answer. Only linked clips can give a human label to a prediction. Two clips were exported and checked twice; we count each once.
 
-### Step 2. Fit one curve for each species
+### Fit one curve for each species
 
 ```
 log odds (prediction is correct) = b0 + b1 × logit(score)
@@ -70,13 +71,13 @@ fit = firth_logit(design, outcome)
 b0, b1 = fit.coef
 ```
 
-### Step 3. Read the threshold from the curve
+### Read the threshold from the curve
 
 The threshold is the **lowest score from which the fitted probability of being correct stays at or above 0.99**. When the curve rises, this is the point where it crosses 0.99: the score `s` that solves `b0 + b1 × logit(s) = logit(0.99)`.
 
 We only accept a threshold **inside the range of checked scores**. Above the highest checked score nobody has listened to a clip, so the curve has no data there.
 
-### Step 4. Label each prediction
+### Label each prediction
 
 The first rule that applies wins:
 
@@ -106,26 +107,23 @@ is_obs = out["observation_status"].isin([STATUS_HUMAN_TRUE, STATUS_ABOVE])
 out["observation"] = out["common_name"].where(is_obs)
 ```
 
-### Step 5. Measure how sure we are about each threshold
+### Measure how sure we are about each threshold
 
 1. **Bootstrap:** resample the checked clips 1,000 times, refit, and keep the middle 95% of the thresholds.
 2. **Careful threshold:** the score where the lower edge of the 95% band of the curve reaches 0.99.
 3. **Direct check:** among checked clips above the threshold, the share that are correct, with a 95% lower bound.
 
 
-## 4. Decisions and trade offs
+## Decisions and trade offs
 
 **1. Firth logistic regression instead of the usual GLM.**
 For Oriole all checks are correct, and the usual GLM has no solution. For Plover there is only one error, and the GLM becomes very confident and gives a threshold of 0.260. Firth adds a small correction that always gives a solution. For Nightjar, where the data are good, both methods agree (0.709 and 0.667).
-*Trade off:* Firth is slightly more cautious with little data. For Plover it gives 106 observations from the threshold alone, against 537 with the GLM. We prefer to be cautious, because a wrong observation is worse than a missed one at the 99% level.
 
 **2. No threshold outside the checked score range.**
 For Firefinch the curve reaches 0.99 only at a score of 0.999, but the highest checked Firefinch clip has a score of 0.907.
-*Trade off:* Firefinch gets no observations from the threshold, even if some predictions are correct. This is the honest answer: we have no evidence at those scores.
 
 **3. Flat curve: threshold at the lowest checked score.**
 For Oriole the curve is above 0.99 at every checked score, so the threshold is the lowest checked score, 0.104. This is very close to the BirdNET minimum of 0.100, so nearly all Oriole predictions become observations.
-*Trade off:* the result depends on the model. To prove a precision of 0.99 directly we would need 299 correct checks in a row; we have 150. This threshold is flagged for more checks.
 
 **4. A human answer is stronger than the threshold.**
 If an ornithologist checked a clip, their answer is used. This changes 68 of the 202 checked predictions: 32 Nightjar, 35 Plover and 1 Firefinch clips are below the threshold but were confirmed as correct, so they become observations. No checked clip above a threshold was marked incorrect. If two checks of the same clip disagree, we use neither.
@@ -134,7 +132,7 @@ If an ornithologist checked a clip, their answer is used. This changes 68 of the
 We link a check to a prediction only when there is exactly one match. A wrong link would put a human label on the wrong clip.
 
 **6. The point estimate is the main result.**
-The brief asks for the score where we are 99% sure according to the fitted curve. We use that. The more cautious options are reported next to it:
+We need to get the score where we are 99% sure according to the fitted curve which results in the following results:
 
 <table>
 <tr><th>Species</th><th>Chosen (Firth)</th><th>Plain GLM</th><th>Careful threshold</th><th>Bootstrap 95% range</th></tr>
@@ -198,12 +196,3 @@ Count by status:
 <tr><td>Plover</td><td>56</td><td>0</td><td>85</td><td>874</td><td>0</td></tr>
 <tr><td><b>Total</b></td><td><b>159</b></td><td><b>43</b></td><td><b>20,592</b></td><td><b>8,490</b></td><td><b>207</b></td></tr>
 </table>
-
-
-## 7. Limits and next steps
-
-1. **Oriole and Plover need more checks**, spread over the middle of the score range. With one or zero errors, the curve cannot be estimated well.
-2. **Firefinch:** BirdNET is mostly wrong for this species at this site. Check if a similar species is the real source of these sounds.
-3. **Store the prediction id with each checked clip.** 347 of 551 checks could not be linked to a prediction because the file name has no id.
-4. **Thresholds are local.** They are valid for this project and BirdNET v2.4. A new site or a new BirdNET version needs new checks.
-5. **R for the Biometrics team.** The same model is available in R with `logistf::logistf(outcome ~ qlogis(score))`.
