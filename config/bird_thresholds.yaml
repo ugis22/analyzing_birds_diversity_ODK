@@ -1,0 +1,24 @@
+# Parameters for the BirdNET species specific thresholds (Wood & Kahl 2024).
+
+# Taken from the vBirdNET column of validation_results.csv.
+birdnet_version: "v2.4"
+
+# Probability that a prediction is correct, required for an observation.
+target_precision: 0.99
+
+# Scores are clipped to [clip, 1 minus clip] before the logit.
+logit_clip: 1.0e-4
+
+# Level for the Wald bands and the bootstrap intervals.
+ci_level: 0.95
+
+# Species with fewer validated clips than this get no threshold.
+min_validations: 30
+
+# Zero lets a species with no false positives still get a Firth curve.
+min_negatives_for_curve: 0
+
+# Resampling for the threshold uncertainty.
+bootstrap:
+  n: 1000
+  seed: 20240101
