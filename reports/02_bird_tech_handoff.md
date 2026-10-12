@@ -400,6 +400,8 @@ Run the platform version on the two files of this dataset. It should give:
 2. 20,751 observations out of 29,491 predictions.
 3. The same `observation_status` for every row as `outputs/birds/birdnet_predictions_with_observations.csv`.
 
+The tests in `tests/test_birds.py` check the Firth fit, the threshold rules, the linking of checked clips, the labelling rules and these reference results.
+
 The reference outputs are in `outputs/birds/`. To produce them again, install the package from the repository root and run the module `birds.cli`, as described in the README.
 
 We ran the reference code on Python 3.13, the platform version. It gives the same thresholds and the same `observation_status` for every row. Note: the reference code finds the data through the repository folders, so it must be installed in editable mode. On the platform this does not matter, because the data come from PostgreSQL.

@@ -14,16 +14,19 @@ dependencies = [
     "statsmodels",
     "pyyaml",
     "matplotlib",
+    "rapidfuzz",
+    "folium",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest", "jupyter"]
+dev = ["pytest", "jupyter", "ruff"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 79
@@ -33,5 +36,9 @@ src = ["src"]
 select = ["E", "W", "F", "I", "N", "D"]
 ignore = ["D203", "D213"]
 
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["D104"]
+"tests/*" = ["D"]
+
 [tool.ruff.lint.isort]
-known-first-party = ["birds", "common"]
+known-first-party = ["birds", "common", "vegetation"]
